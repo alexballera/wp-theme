@@ -1,0 +1,285 @@
+/*
+* Custom Partent Theme
+*/
+$height: 300px;
+
+body {
+    font-size: 16px;
+    font-family: $font-awesome;
+    background-color: white;
+
+    @media screen and (min-width: 59.6875em) {
+        &:before {
+            display: none;
+        }
+
+        & strong {
+            font-weight: bold;
+        }
+    }
+}
+
+.site-main {
+    padding-top: $header-height;
+
+    & header.page-header {
+        & h1.page-title {
+            font-family: $font-awesome;
+        }
+
+        & div.taxonomy-description p {
+            font-family: $font-awesome;
+            text-align: justify;
+            letter-spacing: 1.2px;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+    }
+}
+
+/*
+* Single Post
+*/
+.post-thumbnail {
+  @include background("http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/code.jpg", $background);
+    img {
+        width: 30%;
+    }
+}
+
+header.entry-header {
+    & h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: $font-awesome;
+        font-weight: 700;
+
+        @media screen and (min-width: $screen-md) {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}
+
+.entry-content {
+    font-family: $font-awesome;
+    color: $black;
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    & h1 {
+        font-size: 1.5rem;
+
+        @media screen and (min-width: $screen-md) {
+            font-size: 1.6rem;
+        }
+    }
+
+    & h2 {
+        font-size: 1.3em;
+
+        @media screen and (min-width: $screen-md) {
+            font-size: 1.4em;
+        }
+    }
+
+    & h3 {
+        font-size: 1.1em;
+
+        @media screen and (min-width: $screen-md) {
+            font-size: 1.2em;
+        }
+    }
+
+    & blockquote {
+        margin: 2rem 3rem;
+        padding: 1rem;
+        border-left: 15px solid $orange;
+        border-right: 2px solid $orange;
+        box-shadow: 2px 2px 15px #ccc;
+
+        & p {
+            font: italic;
+
+            &:nth-child(1) {
+                &::before {
+                    content: "\201C";
+                    color: #999;
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+            }
+
+            &:nth-child(last) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    & pre {
+        font-size: 80%;
+
+        @include respond-to(md) {
+            font-size: 1rem;
+        }
+    }
+
+    & p {
+        font-family: $font-awesome;
+        text-align: justify;
+        margin-top: 1rem;
+
+        & a {
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    }
+
+    & ol {
+        list-style-type: decimal;
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+
+    & img {
+        display: none;
+
+        @include respond-to(md) {
+            display: block;
+        }
+    }
+}
+
+/*
+* Autor
+*/
+.author {
+    &-info {
+        font-family: $font-awesome;
+
+        & h2 {
+            font-size: 1.1rem;
+            font-family: $font-awesome;
+        }
+    }
+
+    &-description {
+        & h3 {
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: $font-awesome;
+        }
+
+        & p.author-bio {
+            font-size: 0.9rem;
+
+            & a.author-link {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+/*
+* Footer
+*/
+footer.entry-footer {
+    & span {
+        font-size: 1rem;
+
+        &.posted-on::before,
+        &.byline::before,
+        &.cat-links::before,
+        &.edit-link::before,
+        &.tags-links::before,
+        &.full-size-link::before,
+        &.comments-link::before {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+/*
+* Comentarios
+*/
+.comment-respond {
+    & h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: $font-awesome;
+    }
+
+    & form p label {
+        font-size: 1rem;
+    }
+}
+
+/*
+* Navegación de Entradas
+*/
+nav.post-navigation {
+    & .nav-links {
+        @include respond-to(lg) {
+            display: flex;
+        }
+    }
+
+    font-family: $font-awesome;
+
+    .nav-previous a span,
+    .nav-next a span {
+        font-family: $font-awesome;
+    }
+}
+
+/*
+* Related Post
+*/
+.jp-relatedposts-post {
+    h4.jp-relatedposts-post-title {
+        & a {
+            color: $orange;
+            font-size: 1.5rem !important;
+
+            &:hover {
+                color: grey;
+            }
+        }
+    }
+}
+
+.jp-relatedposts-items p {
+    font-size: 1rem !important;
+}
+
+/*
+* Disqus
+*/
+div#disqus_thread {
+    width: 85%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+/*
+* MailChimp Yikes
+*/
+.yikes-mailchimp-container {
+    & form.yikes-easy-mc-form label input {
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-family: $font-awesome;
+    }
+
+    & span.edit-link {
+        & a.post-edit-link {
+            color: $black;
+            font-size: 1rem;
+        }
+    }
+}

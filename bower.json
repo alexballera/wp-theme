@@ -1,0 +1,28 @@
+{
+  "name": "twentyfifteen-child",
+  "description": "Creacion de tema hijo en WordPress",
+  "main": "index.js",
+  "authors": [
+    "Alex Ballera <alexballera@gmail.com> (http://alexballera.com)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "wordpress",
+    "tema",
+    "child"
+  ],
+  "homepage": "https://github.com/alexballera/wp-theme-child",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
