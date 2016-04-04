@@ -1,44 +1,58 @@
 /** Customizando Estilos */
-body{
-  font-size: 16px;
-  font-family: $font-awesome;
+@import './var',
+'./breakpoints';
+body {
+    font-size: 16px;
+    font-family: $font-awesome;
 }
-a{
-  text-decoration: none;
+
+a {
+    text-decoration: none;
 }
-h1{
-  font-size: 1.8rem;
-  @media screen and (min-width: $screen-md) {
-    font-size: 2rem;
-  }
+
+h1 {
+    font-size: 1.8rem;
+
+    @media screen and (min-width: $screen-md) {
+        font-size: 2rem;
+    }
 }
-h2{
-  font-size: 1.4em;
-  @media screen and (min-width: $screen-md) {
-    font-size: 1.5em;
-  }
+
+h2 {
+    font-size: 1.4em;
+
+    @media screen and (min-width: $screen-md) {
+        font-size: 1.5em;
+    }
 }
-h3{
-  font-size: 1.2em;
-  @media screen and (min-width: $screen-md) {
-    font-size: 1.3em;
-  }
+
+h3 {
+    font-size: 1.2em;
+
+    @media screen and (min-width: $screen-md) {
+        font-size: 1.3em;
+    }
 }
-pre{
-    border-left: 15px solid $orange;
-    border-right: 2px solid $orange;
-  }
-noscript iframe.google-tag{
-  display:none;
-  visibility:hidden;
+
+// pre {
+//     border-left: 15px solid $orange;
+//     border-right: 2px solid $orange;
+// }
+
+noscript iframe.google-tag {
+    display: none;
+    visibility: hidden;
 }
-.title{
-  color: grey;
-  padding: 2rem 0;
-  @include respond-to(sm) {
-      padding-top: 1rem;
-  }
+
+.title {
+    color: grey;
+    padding: 2rem 0;
+
+    @include respond-to(sm) {
+        padding-top: 1rem;
+    }
 }
-.hide{
-  display: none;
+
+.hide {
+    display: none;
 }

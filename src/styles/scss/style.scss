@@ -1,31 +1,23 @@
 @charset "UTF-8";
 /*
- Theme Name:   Twenty Fifteen Child
- Theme URI: http://alexballera.com/themes/twentyfifteen-child/
+ Theme Name: Alex Ballera's Theme
+ Theme URI: https://github.com/alexballera/wp-theme
  Author: Alex Ballera
  Author URI: http://alexballera.com
- Author URI:   http://alexballera.com
- Template:     twentyfifteen
- Version:      1.0.0
+ Version: 1.0.0
  License: GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
- Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
- Text Domain: twentyfifteen-child
+ Tags: responsive-layout
+ Text Domain: Alex Ballera's Theme
 */
 @import './vendors/normalize',
 './vendors/reset',
-'../twentyfifteen/style.css',
 '../fonts/src/font-awesome',
 '../fonts/src/font-mfizz',
 './vendors/prism',
 './customs/var',
 './customs/breakpoints',
 './customs/customs',
-'./partials/navbar',
-'./partials/header',
-'./partials/content',
-'./partials/form',
-'./partials/footer',
-'./partials/mailchimp',
-'./customs/parent',
-'./partials/legal';
+'./partials/header/header',
+'./partials/content/content',
+'./partials/footer/footer';

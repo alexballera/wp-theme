@@ -1,27 +1,30 @@
 {
-  "name": "twentyfifteen-child",
-  "description": "Creacion de tema hijo en WordPress",
-  "main": "index.js",
+  "name": "wp-mytheme",
+  "description": "Tema personalizado de WordPress utilizando Gulp",
+  "main": "gulpfile.js",
   "authors": [
     "Alex Ballera <alexballera@gmail.com> (http://alexballera.com)"
   ],
   "license": "ISC",
   "keywords": [
     "wordpress",
-    "tema",
-    "child"
+    "nodejs",
+    "gulp",
+    "npm"
   ],
-  "homepage": "https://github.com/alexballera/wp-theme-child",
+  "homepage": "https://github.com/alexballera/wp-theme",
   "moduleType": [
     "amd",
     "es6",
-    "globals"
+    "globals",
+    "node",
+    "yui"
   ],
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "src/bower_components",
     "test",
     "tests"
   ]

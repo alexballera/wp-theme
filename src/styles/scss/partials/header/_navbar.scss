@@ -3,7 +3,7 @@
 // Variables
 $header-height: 3rem;
 $header-mult: 1;
-$items: 4;
+$items: 2;
 
 #responsive,
 #projects,
@@ -169,13 +169,8 @@ $items: 4;
         width: 100%;
 
         @include respond-to(md) {
-            width: 60%;
+            width: 30%;
             text-align: right;
-        }
-
-
-        @include respond-to(lg) {
-            width: 45%;
         }
 
 

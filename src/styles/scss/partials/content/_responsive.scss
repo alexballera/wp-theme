@@ -27,9 +27,11 @@
     &__responsive {
         background-color: white;
         padding-top: 1rem;
+
         @include respond-to(md) {
             padding-top: 2rem;
         }
+
 
         & h2 {
             color: grey;
