@@ -51,7 +51,7 @@
                                                     <h3 class="content__articles--post--title"><?php the_title(); ?></h3>
                                                 </section>
                                               </a>
-                                                <section>
+                                                <section class="content__articles--post--footer">
                                                     <i class="fa fa-user"><?php the_author(); ?></i>
                                                     <i class="fa fa-calendar"><?php the_time('j F Y'); ?></i>
                                                     <i class="fa fa-folder-open-o"><?php the_category(', '); ?></i>

@@ -86,7 +86,6 @@
             & i.fa a{
                 font-size: 0.8rem;
                 color: grey;
-                // margin-left: 0.3rem;
                 font-family: $font-awesome;
                 text-align: left;
             }
@@ -95,6 +94,12 @@
             & i.fa.fa-user:before,
             & i.fa.fa-calendar:before {
                 margin: 0 0.3rem;
+            }
+            &--footer{
+                display: none;
+                @include respond-to(md) {
+                    display: block;
+                }
             }
         }
     }
