@@ -79,7 +79,11 @@ gulp.task('serve', () => {
 gulp.task('build:php', () => {
   gulp.src(globs.php.main)
     .pipe(gulp.dest(globs.dist))
+  gulp.src(globs.src + '/index.php')
+    .pipe(rename('front-page.php'))
+    .pipe(gulp.dest(globs.dist))
 })
+
 // Styles: Compila SASS ~> CSS
 gulp.task('build:styles', () => {
   return gulp.src(globs.styles.main)

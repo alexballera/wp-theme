@@ -6,9 +6,9 @@ import spinner from './vendors/spinner.js'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
-import cookieConsent from './lib/cookieConsent'
-import loadJS from './lib/loadJS'
-import showArticles from './lib/showArticles'
+// import cookieConsent from './lib/cookieConsent'
+// import loadJS from './lib/loadJS'
+// import showArticles from './lib/showArticles'
 import showCategories from './lib/showCategories'
 import showTags from './lib/showTags'
 
@@ -30,10 +30,10 @@ import showTags from './lib/showTags'
     btnButton.addEventListener('click', changeButton)
 
 // Cookies
-    cookieConsent()
+    // cookieConsent()
 
 // Articles
-    showArticles()
+    // showArticles()
 
 // Tags
     showTags()
@@ -46,6 +46,6 @@ import showTags from './lib/showTags'
       '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56da634ec645fbfa',
       '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js'
     ]
-    loadJS(urlJs)
+    // loadJS(urlJs)
   }
 })()
