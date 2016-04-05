@@ -48,13 +48,15 @@
                                                     <picture class="content__articles--post--picture">
                                                         <img src="<?php the_post_thumbnail( $size='thumbnail', $attr ); ?>">
                                                     </picture>
-                                                    <h3><?php the_title(); ?></h3>
-                                                    <i class="fa fa-user"></i><?php the_author(); ?>
-                                                    <i class="fa fa-calendar"></i><?php the_time('j F Y'); ?>
-                                                    <i class="fa fa-folder-open-o"></i><?php the_category(', '); ?>
-                                                    <i class="fa fa-tags"></i><?php the_tags($before = '', $sep = ', ', $after = ''); ?>
+                                                    <h3 class="content__articles--post--title"><?php the_title(); ?></h3>
                                                 </section>
                                               </a>
+                                                <section>
+                                                    <i class="fa fa-user"><?php the_author(); ?></i>
+                                                    <i class="fa fa-calendar"><?php the_time('j F Y'); ?></i>
+                                                    <i class="fa fa-folder-open-o"><?php the_category(', '); ?></i>
+                                                    <i class="fa fa-tags"><?php the_tags($before = '', $sep = ', ', $after = ''); ?></i>
+                                                </section>
                                         </div>
                                         <?php endwhile; else: ?>
                                         <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
