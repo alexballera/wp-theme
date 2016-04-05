@@ -41,25 +41,25 @@
                                             <canvas id="spinner">Loading...</canvas>
                                       </div> -->
                                       <div class="content__articles--container">
-                                      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                                      <div class="content__articles--post">
-                                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank">
-                                                <section>
-                                                  <picture class="content__articles--post--picture">
-                                                      <img src="<?php the_post_thumbnail( $size='thumbnail', $attr ); ?>">
-                                                  </picture>
-                                                  <h3 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h3>
-                                                  <i class="fa fa-user"></i><?php the_author(); ?>
-                                                  <i class="fa fa-calendar"></i><?php the_time('j F Y'); ?>
-                                                  <i class="fa fa-folder-open-o"></i><?php the_category(', '); ?>
-                                                  <i class="fa fa-tags"></i><?php the_tags($before = '', $sep = ', ', $after = ''); ?>
-                                              </section>
-                                            </a>
+                                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                                        <div class="content__articles--post">
+                                              <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank">
+                                                  <section>
+                                                    <picture class="content__articles--post--picture">
+                                                        <img src="<?php the_post_thumbnail( $size='thumbnail', $attr ); ?>">
+                                                    </picture>
+                                                    <h3 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h3>
+                                                    <i class="fa fa-user"></i><?php the_author(); ?>
+                                                    <i class="fa fa-calendar"></i><?php the_time('j F Y'); ?>
+                                                    <i class="fa fa-folder-open-o"></i><?php the_category(', '); ?>
+                                                    <i class="fa fa-tags"></i><?php the_tags($before = '', $sep = ', ', $after = ''); ?>
+                                                </section>
+                                              </a>
+                                        </div>
+                                        <?php endwhile; else: ?>
+                                        <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
+                                        <?php endif; ?>
                                       </div>
-                                      </div>
-                                      <?php endwhile; else: ?>
-                                      <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
-                                      <?php endif; ?>
                                       <!-- Fin de los Art&#237;culos -->
                                 </div>
                           </article>
