@@ -58,9 +58,6 @@
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.min.js"></script>
     <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
     <![endif]-->
-  <!--[if lt IE 9]>
-  <script src="<?php echo esc_url( get_template_directory_uri() ); ?>..twentyfifteen/js/html5.js"></script>
-  <![endif]-->
   <?php wp_enqueue_script("jquery"); ?>
   <?php wp_head(); ?>
   </head>
@@ -75,7 +72,7 @@
     <!-- Barra de Navegaci&#243;n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
-                  <a class="nav__mobile--logo" href="<?php echo esc_url( __('http://alexballera.com', 'twentyfifteen')); ?>" target="_blank">
+                  <a class="nav__mobile--logo" href="<?php echo esc_url( __('http://alexballera.com', 'ballera')); ?>" target="_blank">
                     <picture class="nav__mobile--logo--picture">
                       <source
                         srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,

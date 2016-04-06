@@ -32,7 +32,7 @@
                                               </a>
                                                 <section class="content__articles--post--footer">
                                                     <i class="fa fa-user"><?php the_author(); ?></i>
-                                                    <i class="fa fa-calendar"><?php the_time('j F Y'); ?></i>
+                                                    <i class="fa fa-calendar"><?php the_date( get_option( 'date_format' ) ); ?></i>
                                                     <i class="fa fa-folder-open-o"><?php the_category(', '); ?></i>
                                                     <i class="fa fa-tags"><?php the_tags($before = '', $sep = ', ', $after = ''); ?></i>
                                                 </section>
@@ -45,7 +45,7 @@
                                 </div>
                           </article>
                     <!-- Fin de Art&#237;culos -->
-                    <?php include (TEMPLATEPATH . '/templates/form.php'); ?>
+                    <?php get_template_part('/templates/form'); ?>
               <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
         </section>
     <!-- Fin del Contenido -->
