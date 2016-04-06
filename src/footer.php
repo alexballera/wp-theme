@@ -2,13 +2,30 @@
         <footer class="footer">
             <div id="footer"></div>
             <div id="showCategories" class="footer__content">
-                <div class="ul-categories" id="ul-categories">
-                    <h3><i class="fa fa-folder-open"></i> Categor&#237;as</h3>
-                    <a href="" class="hide"><i class="fa fa-folder-open-o"></i></a>
+                <div class="footer__content--categories">
+                    <!-- <h3><i class="fa fa-folder-open"></i> Categor&#237;as</h3> -->
+                    <!-- <i class="fa fa-folder-open-o"> -->
+                    <?php wp_list_categories( array(
+                        'orderby' => 'count',
+                        'order' => 'DESC',
+                        'title_li:' => false,
+                        'show_count' => true
+                    ) ); ?> 
+                    <!-- </i> -->
                 </div>
-                <div class="tags" id="tags">
+                <div class="footer__content--tags tags" id="tags">
                     <h3><i class="fa fa-tags"></i> Etiquetas</h3>
-                    <a href="" class="hide"><i class="fa fa-tag"></i></a>
+                    <?php
+                        $valores = array(
+                          'smallest' => 10,
+                          'largest' => 18,
+                          'unit' => 'px',
+                          'number' => 0,
+                          'format' => 'flat',
+                          'orderby' => 'name',
+                          'order' => 'ASC');
+                        wp_tag_cloud($valores);
+                        ?>
                 </div>
             </div>
             <div id="lastArticles" class="footer__content footer__articles">

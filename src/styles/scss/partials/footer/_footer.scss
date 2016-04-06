@@ -178,6 +178,22 @@ $item: 3;
         @include respond-to(lg) {
             width: 20%;
         }
+
+        &--categories{
+            & li.categories{
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 1rem;
+                padding-top: 1rem;
+                & ul {
+                    margin-top: 1rem;
+                    & li.cat-item{
+                        font-size: 0.8rem;
+                        padding: 0;
+                    }
+                }
+            }
+        }
     }
 
     &__articles {

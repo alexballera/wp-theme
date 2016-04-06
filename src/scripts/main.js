@@ -9,8 +9,8 @@ import doTransparentBar from './lib/doTransparentBar'
 // import cookieConsent from './lib/cookieConsent'
 // import loadJS from './lib/loadJS'
 // import showArticles from './lib/showArticles'
-import showCategories from './lib/showCategories'
-import showTags from './lib/showTags'
+// import showCategories from './lib/showCategories'
+// import showTags from './lib/showTags'
 
 (() => {
   'use strict'
@@ -36,10 +36,10 @@ import showTags from './lib/showTags'
     // showArticles()
 
 // Tags
-    showTags()
+    // showTags()
 
 // Categories
-    showCategories()
+    // showCategories()
 
   // Load JS
     var urlJs = [
