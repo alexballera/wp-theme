@@ -3,18 +3,15 @@
             <div id="footer"></div>
             <div id="showCategories" class="footer__content">
                 <div class="footer__content--categories">
-                    <!-- <h3><i class="fa fa-folder-open"></i> Categor&#237;as</h3> -->
-                    <!-- <i class="fa fa-folder-open-o"> -->
                     <?php wp_list_categories( array(
                         'orderby' => 'count',
                         'order' => 'DESC',
                         'title_li:' => false,
                         'show_count' => true
-                    ) ); ?> 
-                    <!-- </i> -->
+                    ) ); ?>
                 </div>
                 <div class="footer__content--tags tags" id="tags">
-                    <h3><i class="fa fa-tags"></i> Etiquetas</h3>
+                    <h3></i> Etiquetas</h3>
                     <?php
                         $valores = array(
                           'smallest' => 10,
@@ -29,14 +26,18 @@
                 </div>
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
-                <h3><i class="fa fa-file"></i> &#218;ltimos art&#237;culos</h3>
-                <ul class="ul-articles" id="lastsArticles">
-                  <li class="hide">
-                    <a href="" target="_blank">
-                      <i class="fa fa-file-text-o"></i>
+                <h3>&#218;ltimos art&#237;culos</h3>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                  <ul class="ul-articles">
+                  <li>
+                  <i class="fa fa-file-text-o"></i>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?>
                     </a>
                   </li>
                 </ul>
+                  <?php endwhile; else: ?>
+                  <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
+                  <?php endif; ?>
             </div>
             <div class="footer__contact">
               <div class="footer__social">

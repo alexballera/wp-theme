@@ -29,13 +29,13 @@ $item: 3;
         font-size: 1rem;
         padding: 1rem 0;
 
-        & i.fa {
-            &.fa-folder-open,
-            &.fa-tags,
-            &.fa-file {
-                margin-right: 0.5rem;
-            }
-        }
+        // & i.fa {
+        //     &.fa-folder-open,
+        //     &.fa-tags,
+        //     &.fa-file {
+        //         margin-right: 0.5rem;
+        //     }
+        // }
     }
 
     &__contact {
@@ -202,6 +202,11 @@ $item: 3;
 
         & ul li {
             width: 95%;
+            // & a {
+            //     & i.fa.fa-file-text-o:before{
+            //         margin-right: 0.5rem;
+            //     }
+            // }
         }
 
         @include respond-to(md) {
