@@ -83,20 +83,23 @@
             }
 
             & i.fa,
-            & i.fa a{
+            & i.fa a {
                 font-size: 0.8rem;
                 color: grey;
                 font-family: $font-awesome;
                 text-align: left;
             }
+
             & i.fa.fa-folder-open-o:before,
             & i.fa.fa-tags:before,
             & i.fa.fa-user:before,
             & i.fa.fa-calendar:before {
                 margin: 0 0.3rem;
             }
-            &--footer{
+
+            &--footer {
                 display: none;
+
                 @include respond-to(md) {
                     display: block;
                 }

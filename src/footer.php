@@ -27,15 +27,15 @@
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
                 <h3>&#218;ltimos art&#237;culos</h3>
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <?php if ( have_posts() ) : $i = 1; while (have_posts() && $i < 9) : the_post(); ?>
                   <ul class="ul-articles">
                   <li>
                   <i class="fa fa-file-text-o"></i>
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?> - <?php the_time('j F Y'); ?>
                     </a>
                   </li>
                 </ul>
-                  <?php endwhile; else: ?>
+                  <?php $i++; endwhile; else: ?>
                   <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
                   <?php endif; ?>
             </div>
