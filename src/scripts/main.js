@@ -8,9 +8,6 @@ import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
 // import cookieConsent from './lib/cookieConsent'
 // import loadJS from './lib/loadJS'
-// import showArticles from './lib/showArticles'
-// import showCategories from './lib/showCategories'
-// import showTags from './lib/showTags'
 
 (() => {
   'use strict'
@@ -31,15 +28,6 @@ import doTransparentBar from './lib/doTransparentBar'
 
 // Cookies
     // cookieConsent()
-
-// Articles
-    // showArticles()
-
-// Tags
-    // showTags()
-
-// Categories
-    // showCategories()
 
   // Load JS
     var urlJs = [
