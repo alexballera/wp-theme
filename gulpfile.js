@@ -77,7 +77,7 @@ gulp.task('serve', () => {
 })
 // PHP
 gulp.task('build:php', () => {
-  gulp.src(globs.php.main)
+  gulp.src(globs.php.watch)
     .pipe(gulp.dest(globs.dist))
   gulp.src(globs.src + '/index.php')
     .pipe(rename('front-page.php'))
