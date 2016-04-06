@@ -1,17 +1,13 @@
   <?php get_header(); ?>
         <!-- Header -->
-        <header class="header" style="color:white;">
-              <?php if ( $paged < 2 ) { // Do stuff specific to first page?>
+        <header class="header taxonomy" style="color:white;">
                 <?php if ( is_category() ) : ?>
-                <h2 id="category-name-header">Categoría: <?php single_cat_title(); ?></h2>
+                <h1 class="taxonomy__title">Categor&#237;a: <?php single_cat_title(); ?></h1>
                 <?php add_filter('category_description', 'wpautop'); ?>
                 <?php add_filter('category_description', 'wptexturize'); ?>
-                <div id="category-description">
+                <div class="taxonomy__description">
                 <?php echo category_description(); ?>
                 </div>
-                <?php endif; ?>
-                <?php } else { // Do stuff specific to non-first page ?>
-                <?php } ?>
         </header>
     <!-- Fin de Header -->
     <!-- Contenido -->
@@ -21,11 +17,8 @@
                           <article id="content_articles" class="content__articles content__articles--background">
                                 <div class="container">
                                       <div id="articles"></div>
-                                      <h2 class="content__articles--title title">&#191;Qu&#233; quieres aprender hoy?</h2>
+                                      <h2 class="content__articles--title title">Disfruta de los art&#237;culos de la categor&#237;a <?php single_cat_title(); ?></h2>
                                       <!-- Inicio de los Art&#237;culos -->
-                                      <!-- <div class="content__articles--container" id="showArticles">
-                                            <canvas id="spinner">Loading...</canvas>
-                                      </div> -->
                                       <div class="content__articles--container">
                                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                         <div id="post-<?php the_ID(); ?>" class="content__articles--post">
@@ -82,4 +75,5 @@
               <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
         </section>
     <!-- Fin del Contenido -->
+   <?php endif; ?>
     <?php get_footer(); ?>
