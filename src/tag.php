@@ -1,6 +1,6 @@
   <?php get_header(); ?>
         <!-- Header -->
-        <header class="header taxonomy" style="color:white;">
+        <header class="header taxonomy">
                 <?php if ( is_tag() ) : ?>
                 <h1 class="taxonomy__title">Etiqueta: <?php single_tag_title(); ?></h1>
                 <?php add_filter('tag_description', 'wpautop'); ?>

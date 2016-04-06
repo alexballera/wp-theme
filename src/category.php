@@ -1,6 +1,6 @@
   <?php get_header(); ?>
         <!-- Header -->
-        <header class="header taxonomy" style="color:white;">
+        <header class="header taxonomy">
                 <?php if ( is_category() ) : ?>
                 <h1 class="taxonomy__title">Categor&#237;a: <?php single_cat_title(); ?></h1>
                 <?php add_filter('category_description', 'wpautop'); ?>
@@ -75,5 +75,5 @@
               <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
         </section>
     <!-- Fin del Contenido -->
-   <?php endif; ?>
+    <?php endif; ?>
     <?php get_footer(); ?>
