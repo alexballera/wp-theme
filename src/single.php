@@ -11,16 +11,12 @@
         <section class="content">
               <!-- Servicios, Proyectos & Art&#237;culos -->
                     <!-- Art&#237;culos -->
-                          <article id="content_articles" class="content__articles content__articles--background">
-                                <div class="content__articles--container">
-                                  <div id="post-<?php the_ID(); ?>" <?php post_class( 'content__articles--post' ); ?>>
-                                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank">
-                                      <section>
-                                        <h3 class="content__articles--post--title"><?php the_title(); ?></h3>
-                                      </section>
-                                    </a>
+                          <article class="container">
+                                <div>
+                                  <div id="post-<?php the_ID(); ?>" <?php post_class( 'content__single' ); ?>>
+                                    <h1 class="content__single--title"><?php the_title(); ?></h1>
                                     <div><?php the_content(); ?></div>
-                                    <section class="content__articles--post--footer">
+                                    <section class="content__single--footer">
                                       <i class="fa fa-user"><?php the_author_posts_link() ?></i>
                                       <i class="fa fa-calendar"><?php the_date( get_option( 'date_format' ) ); ?></i>
                                       <i class="fa fa-folder-open-o"><?php the_category(', '); ?></i>

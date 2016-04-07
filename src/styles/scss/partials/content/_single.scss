@@ -1,0 +1,5 @@
+.content__single{
+  @include respond-to(md) {
+    padding: 2rem 5rem;
+  }
+}
