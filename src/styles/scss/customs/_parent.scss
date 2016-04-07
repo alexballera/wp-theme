@@ -266,20 +266,3 @@ div#disqus_thread {
     padding: 1rem;
 }
 
-/*
-* MailChimp Yikes
-*/
-.yikes-mailchimp-container {
-    & form.yikes-easy-mc-form label input {
-        padding: 0.5rem;
-        font-size: 1rem;
-        font-family: $font-awesome;
-    }
-
-    & span.edit-link {
-        & a.post-edit-link {
-            color: $black;
-            font-size: 1rem;
-        }
-    }
-}
