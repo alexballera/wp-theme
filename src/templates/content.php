@@ -1,7 +1,7 @@
 <!-- Inicio de los Art&#237;culos -->
 <div class="content__articles--container">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <div id="post-<?php the_ID(); ?>" class="content__articles--post">
+  <div id="post-<?php the_ID(); ?>" <?php post_class( 'content__articles--post' ); ?>>
     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank">
       <section>
         <picture class="content__articles--post--picture">
@@ -18,7 +18,7 @@
     </section>
   </div>
   <?php endwhile; else: ?>
-  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+  <p>Lo siento, no encontre nada para mostrar.</p>
   <?php endif; ?>
 </div>
 <!-- Fin de los Art&#237;culos -->

@@ -61,7 +61,7 @@
   <?php wp_enqueue_script("jquery"); ?>
   <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class('body'); ?>>
     <!--[if lt  IE  8]>
     <p  class="browsehappy">
       Est&#225;s usando  un  navegador <strong>desactualizado</strong>.
@@ -72,7 +72,7 @@
     <!-- Barra de Navegaci&#243;n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
-                  <a class="nav__mobile--logo" href="<?php echo esc_url( __('http://alexballera.com', 'ballera')); ?>" target="_blank">
+                  <a class="nav__mobile--logo" href="<?php echo esc_url( __('http://alexballera.com', 'portfolio-one')); ?>" target="_blank">
                     <picture class="nav__mobile--logo--picture">
                       <source
                         srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=50,

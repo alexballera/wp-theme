@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- Header -->
 <header class="header taxonomy">
-  <h1 class="taxonomy__title"><?php _e( 'Autor: ', 'ballera' ); ?><?php echo get_the_author(); ?></h1>
+  <h1 class="taxonomy__title"><?php _e( 'Autor: ', 'portfolio-one' ); ?><?php echo get_the_author(); ?></h1>
   <div class="taxonomy__description">
     <?php the_author_meta( 'description' ); ?>
   </div>

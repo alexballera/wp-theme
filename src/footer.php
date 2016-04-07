@@ -36,7 +36,7 @@
                   </li>
                 </ul>
                   <?php $i++; endwhile; else: ?>
-                  <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
+                  <p>Lo siento, no encontre nada para mostrar.</p>
                   <?php endif; ?>
             </div>
             <div class="footer__contact">
@@ -56,11 +56,11 @@
                 </ul>
                 <h3>S&#237;gueme y cont&#225;ctame</h3>
                 <ul class="footer__social--redes">
-                  <li><a href="<?php echo esc_url( __( 'https://www.facebook.com/alexballera', 'ballera')); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="<?php echo esc_url( __( 'https://twitter.com/AlexBallera', 'ballera')); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="<?php echo esc_url( __( 'https://www.linkedin.com/in/alexballera', 'ballera')); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="<?php echo esc_url( __( 'https://plus.google.com/u/0/+AlexBallera/posts', 'ballera')); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="<?php echo esc_url( __('https://github.com/alexballera', 'ballera')); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                  <li><a href="<?php echo esc_url( __( 'https://www.facebook.com/alexballera', 'portfolio-one')); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://twitter.com/AlexBallera', 'portfolio-one')); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://www.linkedin.com/in/alexballera', 'portfolio-one')); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="<?php echo esc_url( __( 'https://plus.google.com/u/0/+AlexBallera/posts', 'portfolio-one')); ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="<?php echo esc_url( __('https://github.com/alexballera', 'portfolio-one')); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
                 <li><a href="mailto:alex@alexballera.com"><i class="fa fa-envelope-o"></i></a></li>
                 </ul>
                   <a class="informacion__boton" href="#contactame"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
@@ -81,8 +81,8 @@
     <!-- Fin de Footer -->
     <section class="legal">
       <ul>
-        <li><a href="<?php echo esc_url( __('http://alexballera.com/legal.htm', 'ballera')); ?>" target="_blank" title="T&#233;rminos Legales"><h2>T&#233;rminos Legales</h2></a></li>
-        <li><a href="<?php echo esc_url( __('http://alexballera.com/cookies.htm', 'ballera')); ?>" target="_blank" title="Pol&#237;tica de Cookies"><h2>Pol&#237;tica de Cookies</h2></a></li>
+        <li><a href="<?php echo esc_url( __('http://alexballera.com/legal.htm', 'portfolio-one')); ?>" target="_blank" title="T&#233;rminos Legales"><h2>T&#233;rminos Legales</h2></a></li>
+        <li><a href="<?php echo esc_url( __('http://alexballera.com/cookies.htm', 'portfolio-one')); ?>" target="_blank" title="Pol&#237;tica de Cookies"><h2>Pol&#237;tica de Cookies</h2></a></li>
       </ul>
     </section>
     <!-- Scripts -->
