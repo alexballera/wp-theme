@@ -44,4 +44,4 @@
               <?php get_template_part('/templates/form'); ?>
         </section>
     <!-- Fin del Contenido -->
-    <?php get_footer(index); ?>
+    <?php get_footer('index'); ?>

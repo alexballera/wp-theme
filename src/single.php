@@ -15,7 +15,7 @@
                                 <div>
                                   <div id="post-<?php the_ID(); ?>" <?php post_class( 'content__single' ); ?>>
                                     <h1 class="content__single--title"><?php the_title(); ?></h1>
-                                    <div><?php the_content(); ?></div>
+                                    <div class="content__single--text"><?php the_content(); ?></div>
                                     <section class="content__single--footer">
                                       <i class="fa fa-user"><?php the_author_posts_link() ?></i>
                                       <i class="fa fa-calendar"><?php the_date( get_option( 'date_format' ) ); ?></i>

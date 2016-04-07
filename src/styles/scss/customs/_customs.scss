@@ -1,9 +1,16 @@
 /** Customizando Estilos */
-@import './var',
-'./breakpoints';
+@import "./var";
+@import "./breakpoints";
+@import "./wpcss";
+@import "./parent";
+
 .body {
     font-size: 16px;
     font-family: $font-awesome;
+}
+
+strong {
+    font-weight: bold;
 }
 
 a {
