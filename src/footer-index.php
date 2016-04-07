@@ -10,10 +10,7 @@
                         'show_count' => true
                     ) ); ?>
                 </div>
-
-            </div>
-            <div id="lastArticles" class="footer__content footer__articles">
-              <div class="footer__content--tags tags" id="tags">
+                <div class="footer__content--tags tags" id="tags">
                     <h3></i> Etiquetas</h3>
                     <?php
                         $valores = array(
@@ -27,6 +24,20 @@
                         wp_tag_cloud($valores);
                         ?>
                 </div>
+            </div>
+            <div id="lastArticles" class="footer__content footer__articles">
+                <h3>&#218;ltimos art&#237;culos</h3>
+                <?php if ( have_posts() ) : $i = 1; while (have_posts() && $i < 9) : the_post(); ?>
+                  <ul class="ul-articles">
+                  <li>
+                  <i class="fa fa-file-text-o"></i>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?> - <?php the_date( get_option( 'date_format' ) ); ?>
+                    </a>
+                  </li>
+                </ul>
+                  <?php $i++; endwhile; else: ?>
+                  <p>Lo siento, no encontre nada para mostrar.</p>
+                  <?php endif; ?>
             </div>
             <div class="footer__contact">
               <div class="footer__social">
