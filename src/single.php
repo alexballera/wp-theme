@@ -19,8 +19,9 @@
                                     <section class="content__single--footer">
                                       <i class="fa fa-user"><?php the_author_posts_link() ?></i>
                                       <i class="fa fa-calendar"><?php the_date( get_option( 'date_format' ) ); ?></i>
-                                      <i class="fa fa-folder-open-o"><?php the_category(', '); ?></i>
+                                      <i class="fa fa-folder-open"><?php the_category(', '); ?></i>
                                       <i class="fa fa-tags"><?php the_tags($before = '', $sep = ', ', $after = ''); ?></i>
+                                      <i class="fa fa-comment"><?php comments_number( $zero = false, $one = true, $more = true ); ?></i>
                                     </section>
                                   <?php endwhile; else: ?>
                                   <p>Lo siento, no encontre nada para mostrar.</p>
