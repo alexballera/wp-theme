@@ -46,14 +46,13 @@
             line-height: 2rem;
         }
     }
-
 }
 
-@import './responsive',
-'./articles',
-'./form',
-'./taxonomy',
-'./single';
+@import "./responsive";
+@import "./articles";
+@import "./form";
+@import "./taxonomy";
+@import "./single";
 
 .hide {
     display: none;

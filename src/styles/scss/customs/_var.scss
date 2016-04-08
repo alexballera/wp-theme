@@ -22,7 +22,7 @@ $wordpress: #0087BE;
 $rss: #FF9900;
 
 $socialheigt: 45px;
-$font-awesome: 'FontAwesome', Arial, sans-serif;
+$font-awesome: "FontAwesome", Arial, sans-serif;
 
 // Breakpoints
 // $screen-xs: 30em; // 480px
@@ -36,9 +36,9 @@ $font-awesome: 'FontAwesome', Arial, sans-serif;
 // Images Articles & Projects
 $w: 600px;
 $h: 300px;
-$ratio: ($w/$h);
+$ratio: $w / $h;
 $width: 100px;
-$height: ($width/$ratio);
+$height: $width / $ratio;
 $multip: 3;
 
 // Variables
