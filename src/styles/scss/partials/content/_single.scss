@@ -88,7 +88,39 @@
             list-style-type: decimal;
             margin: 1rem;
             margin-left: 2rem;
+            letter-spacing: 1.2px;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
         }
+    }
+    &--footer{
+      display: none;
+      @include respond-to(md) {
+        margin-top: 2rem;
+        display: block;
+        background-color: grey;
+        color: white;
+        padding: 3rem 1rem;
+        width: 100%;
+        font-family: $font-awesome;
+        }
+      & i {
+        margin-right: 0.5rem;
+        font-family: $font-awesome;
+        &:before{
+          margin-right: 0.5rem;
+        }
+        & a{
+          color: white;
+          font-family: $font-awesome;
+          @include respond-to(md) {
+            height: 5rem;
+          }
+          &:hover{
+            color: $orange;
+          }
+        }
+      }
     }
 }
 
@@ -97,9 +129,9 @@
 */
 .yikes-mailchimp-container {
   margin: 0 auto;
-    @include respond-to(md) {
-        width: 80%;
-    }
+    // @include respond-to(md) {
+    //     width: 80%;
+    // }
 
 
     & form.yikes-easy-mc-form {

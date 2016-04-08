@@ -187,22 +187,22 @@ body {
 /*
 * Footer
 */
-footer.entry-footer {
-    & span {
-        font-size: 1rem;
+// footer.entry-footer {
+//     & span {
+//         font-size: 1rem;
 
-        &.posted-on::before,
-        &.byline::before,
-        &.cat-links::before,
-        &.edit-link::before,
-        &.tags-links::before,
-        &.full-size-link::before,
-        &.comments-link::before {
-            font-size: 1.5rem;
-            line-height: 2rem;
-        }
-    }
-}
+//         &.posted-on::before,
+//         &.byline::before,
+//         &.cat-links::before,
+//         &.edit-link::before,
+//         &.tags-links::before,
+//         &.full-size-link::before,
+//         &.comments-link::before {
+//             font-size: 1.5rem;
+//             line-height: 2rem;
+//         }
+//     }
+// }
 
 /*
 * Comentarios
