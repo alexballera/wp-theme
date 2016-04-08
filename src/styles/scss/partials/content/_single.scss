@@ -16,12 +16,8 @@
     &--text {
         & h2,
         & h3 {
-            text-align: left;
             padding: 1rem 0;
-
-            @include respond-to(md) {
-                text-align: justify;
-            }
+            font-weight: 700;
         }
 
         & blockquote {
@@ -80,6 +76,7 @@
 
                 @include respond-to(md) {
                     display: block;
+                    margin: 1rem auto;
                 }
             }
         }
@@ -93,34 +90,43 @@
             line-height: 1.2rem;
         }
     }
-    &--footer{
-      display: none;
-      @include respond-to(md) {
-        margin-top: 2rem;
-        display: block;
-        background-color: grey;
-        color: white;
-        padding: 3rem 1rem;
-        width: 100%;
-        font-family: $font-awesome;
+
+    &--footer {
+        display: none;
+
+        @include respond-to(md) {
+            margin-top: 2rem;
+            display: block;
+            background-color: grey;
+            color: white;
+            padding: 3rem 1rem;
+            width: 100%;
+            font-family: $font-awesome;
         }
-      & i {
-        margin-right: 0.5rem;
-        font-family: $font-awesome;
-        &:before{
-          margin-right: 0.5rem;
+
+
+        & i {
+            margin-right: 0.5rem;
+            font-family: $font-awesome;
+
+            &:before {
+                margin-right: 0.5rem;
+            }
+
+            & a {
+                color: white;
+                font-family: $font-awesome;
+
+                @include respond-to(md) {
+                    height: 5rem;
+                }
+
+
+                &:hover {
+                    color: $orange;
+                }
+            }
         }
-        & a{
-          color: white;
-          font-family: $font-awesome;
-          @include respond-to(md) {
-            height: 5rem;
-          }
-          &:hover{
-            color: $orange;
-          }
-        }
-      }
     }
 }
 
@@ -128,11 +134,7 @@
 * MailChimp Yikes
 */
 .yikes-mailchimp-container {
-  margin: 0 auto;
-    // @include respond-to(md) {
-    //     width: 80%;
-    // }
-
+    margin: 0 auto;
 
     & form.yikes-easy-mc-form {
         & label {
@@ -140,13 +142,11 @@
             font-size: 1.2rem;
             line-height: 1.2rem;
             font-family: $font-awesome;
+            text-align: left;
+
             & input {
                 padding: 0.7rem;
                 margin: 0.3rem 0;
-            }
-
-            & span {
-                text-align: left;
             }
         }
 
@@ -156,6 +156,7 @@
             letter-spacing: 1.2px;
             font-size: 1.5rem;
             line-height: 1.5rem;
+            padding: 1.5rem;
             font-family: $font-awesome;
 
             &:hover {
@@ -184,4 +185,13 @@
             }
         }
     }
+}
+
+/*
+* Disqus
+*/
+div#disqus_thread {
+    width: 85%;
+    margin: 1rem auto;
+    padding: 1rem;
 }
