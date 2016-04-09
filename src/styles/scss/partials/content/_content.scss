@@ -48,12 +48,12 @@
     }
 }
 
-@import "./responsive";
-@import "./articles";
-@import "./form";
-@import "./taxonomy";
-@import "./single";
-
 .hide {
     display: none;
 }
+
+@import './header',
+'./responsive',
+'./articles',
+'./taxonomy',
+'./single';
