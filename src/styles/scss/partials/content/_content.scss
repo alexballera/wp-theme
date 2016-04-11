@@ -4,13 +4,11 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    background-color: $background;
 
     @include respond-to(sm) {
         margin-top: 1rem;
         margin-bottom: 1rem;
         width: 90%;
-        padding: 1em;
     }
 }
 
@@ -25,9 +23,7 @@
     &__container {
         @include respond-to(md) {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            margin-bottom: 1rem;
         }
     }
 

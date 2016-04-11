@@ -1,6 +1,6 @@
 <section class="sidebar">
   <article class="sidebar__content">
-    <h3>Ultimas noticias</h3>
+    <h3>&#218;ltimos art&#237;culos</h3>
     <?php if ( have_posts() ) : $i = 1; while (have_posts() && $i < 6) : the_post(); ?>
     <ul>
       <li>

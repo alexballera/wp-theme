@@ -2,8 +2,11 @@
 
 .content__articles {
     box-sizing: border-box;
+    background-color: $background;
+    padding-bottom: 1rem;
 
     @include respond-to(lg) {
+        box-sizing: border-box;
         width: 75%;
     }
 
