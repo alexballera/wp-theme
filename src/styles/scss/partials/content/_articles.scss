@@ -1,100 +1,114 @@
 /** Articles & Projects */
-.content {
-    &__articles {
-        &--container {
-            box-sizing: border-box;
-            height: 100%;
 
-            @include respond-to(mm) {
-                display: flex;
-                flex: 0 1;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
+.content__articles {
+    box-sizing: border-box;
+
+    @include respond-to(lg) {
+        width: 75%;
+    }
+
+
+    &--container {
+        box-sizing: border-box;
+        height: 100%;
+
+        @include respond-to(md) {
+            display: flex;
+            flex: 0 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &--post {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        margin-bottom: 0.5rem;
+        text-align: left;
+
+        &:hover {
+            box-shadow: 0 0 20px $black;
+
+            & picture {
+                opacity: 0.8;
             }
         }
 
-        &--post {
-            width: 100%;
-            box-sizing: border-box;
-            background-color: white;
-            margin-bottom: 0.5rem;
+        @include respond-to(md) {
+            margin: 0.3rem;
+            position: relative;
+            border: none;
+            padding-right: 0;
+        }
+
+        @include respond-to(md) {
+            width: 48%;
+        }
+
+
+        @include respond-to(lg) {
+            width: 30%;
+        }
+
+
+        @include respond-to(xl) {
+            width: $width * 3.85;
+        }
+
+
+        &--picture {
+            display: flex;
+
+            @include background("http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/code.jpg", $black);
+
+            justify-content: center;
+
+            & img {
+                width: 50%;
+                height: 50%;
+                vertical-align: middle;
+            }
+        }
+
+        &--title {
+            color: $orange;
+            margin: 0.5rem;
+            @include respond-to(lg) {
+                font-size: 1rem;
+            }
+
+            &:hover {
+                color: $purple;
+            }
+        }
+
+        & i.fa,
+        & i.fa a {
+            font-size: 0.8rem;
+            color: grey;
+            font-family: $font-awesome;
             text-align: left;
 
             &:hover {
-                 box-shadow: 0 0 20px $black;
-                 & picture{
-                    opacity: 0.9;
-                }
+                color: $purple;
             }
+        }
 
-            @include respond-to(mm) {
-                margin: 0.3rem;
-                position: relative;
-                border: none;
-                width: 48%;
-                padding-right: 0;
-            }
+        & i.fa.fa-folder-open-o:before,
+        & i.fa.fa-tags:before,
+        & i.fa.fa-user:before,
+        & i.fa.fa-calendar:before {
+            margin: 0 0.3rem;
+        }
 
+        &--footer {
+            display: none;
 
-            @include respond-to(lg) {
-                width: 30%;
-            }
-
-
-            @include respond-to(xl) {
-                width: $width * 3.85;
-            }
-
-
-            &--picture {
-                color: $orange;
-                display: flex;
-
-                @include background("http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/code.jpg", $background);
-
-                justify-content: center;
-
-                & img {
-                    width: 50%;
-                    height: 50%;
-                    vertical-align: middle;
-                }
-            }
-
-            &--title {
-                color: $orange;
+            @include respond-to(md) {
+                display: block;
                 margin: 0.5rem;
-                &:hover{
-                    color: $purple;
-                }
-            }
-
-            & i.fa,
-            & i.fa a {
-                font-size: 0.8rem;
-                color: grey;
-                font-family: $font-awesome;
-                text-align: left;
-                &:hover{
-                    color: $purple;
-                }
-            }
-
-            & i.fa.fa-folder-open-o:before,
-            & i.fa.fa-tags:before,
-            & i.fa.fa-user:before,
-            & i.fa.fa-calendar:before {
-                margin: 0 0.3rem;
-            }
-
-            &--footer {
-                display: none;
-
-                @include respond-to(md) {
-                    display: block;
-                    margin: 0.5rem;
-                }
             }
         }
     }

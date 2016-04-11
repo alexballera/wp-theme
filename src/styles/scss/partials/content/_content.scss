@@ -22,6 +22,15 @@
     margin-left: auto;
     margin-right: auto;
 
+    &__container {
+        @include respond-to(md) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
     &__title {
         width: 90%;
         margin: 1rem auto;
@@ -52,8 +61,8 @@
     display: none;
 }
 
-@import './header',
-'./responsive',
-'./articles',
-'./taxonomy',
-'./single';
+@import "./header";
+@import "./responsive";
+@import "./articles";
+@import "./taxonomy";
+@import "./single";

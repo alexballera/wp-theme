@@ -5,7 +5,7 @@
     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank">
       <section>
         <picture class="content__articles--post--picture">
-          <img src="<?php the_post_thumbnail( $size='thumbnail', $attr ); ?>">
+          <?php the_post_thumbnail( $size='thumbnail' ); ?>
         </picture>
         <h3 class="content__articles--post--title"><?php the_title(); ?></h3>
       </section>
