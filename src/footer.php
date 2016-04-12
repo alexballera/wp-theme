@@ -68,12 +68,7 @@
             </div>
         </footer>
     <!-- Fin de Footer -->
-    <section class="legal">
-      <ul>
-        <li><a href="<?php echo esc_url( __('http://alexballera.com/legal.htm', 'portfolio-one')); ?>" target="_blank" title="T&#233;rminos Legales"><h2>T&#233;rminos Legales</h2></a></li>
-        <li><a href="<?php echo esc_url( __('http://alexballera.com/cookies.htm', 'portfolio-one')); ?>" target="_blank" title="Pol&#237;tica de Cookies"><h2>Pol&#237;tica de Cookies</h2></a></li>
-      </ul>
-    </section>
+    <?php get_template_part('/templates/nav-footer'); ?>
     <!-- Scripts -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.min.js"></script>
     <?php wp_enqueue_script("jquery"); ?>

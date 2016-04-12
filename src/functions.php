@@ -7,4 +7,15 @@ add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form'
 add_theme_support( 'title-tag' );
 add_editor_style('css/editor-style.css');
 
+function register_my_menus() {
+  register_nav_menus(
+                     array(
+                           'header-menu' => __( 'Header Menu' ),
+                           'footer-menu' => __( 'Footer Menu' )
+                           )
+                     );
+}
+
+  add_action('init', 'register_my_menus');
+
 ?>

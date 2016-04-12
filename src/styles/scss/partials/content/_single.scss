@@ -81,13 +81,20 @@
             }
         }
 
-        & ol {
+        & ol,
+        & ul {
             list-style-type: decimal;
             margin: 1rem;
             margin-left: 2rem;
             letter-spacing: 1.2px;
             font-size: 1.2rem;
             line-height: 1.2rem;
+            & li a{
+                color: $orange;
+                &:hover{
+                    color: $purple;
+                }
+            }
         }
     }
 
