@@ -1,0 +1,44 @@
+.calendar_wrap {
+    & table {
+        font-family: $font-awesome;
+        color: grey;
+        margin: 0 auto;
+
+        & caption,
+        & thead,
+        & tbody,
+        & tfoot {
+            letter-spacing: 1.2px;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+
+        & caption {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        & tbody {
+
+            & tr td a {
+                color: $orange;
+
+                &:hover {
+                    color: $purple;
+                }
+            }
+        }
+
+        & tfoot {
+            margin-top: 1rem;
+
+            & tr td#prev a {
+                color: $orange;
+
+                &:hover {
+                    color: $purple;
+                }
+            }
+        }
+    }
+}

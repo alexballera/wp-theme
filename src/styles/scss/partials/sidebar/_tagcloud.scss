@@ -1,0 +1,7 @@
+.tagcloud a {
+    color: $orange;
+
+    &:hover {
+        color: $purple;
+    }
+}

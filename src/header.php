@@ -19,6 +19,35 @@
     <link rel="apple-touch-icon" sizes="72x72" href="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad.png?w=72" />
     <link rel="apple-touch-icon" sizes="114x114" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone-retina.png?w=114" />
     <link rel="apple-touch-icon" sizes="152x152" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad-retina.png?w=152">
+    <!-- START - Facebook Open Graph, Google+ and Twitter Card Tags  -->
+    <meta name="author" content="Alex Ballera"/>
+    <meta name="description" content="<?php bloginfo('description'); ?>"/>
+    <meta property="fb:app_id" content="586663831475504"/>
+    <meta property="fb:admins" content="721354641"/>
+    <meta property="og:locale" content="es_ES"/>
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
+    <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?>"/>
+    <meta property="og:url" content="<?php bloginfo('url'); ?>"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="<?php bloginfo('description'); ?>"/>
+    <meta property="og:image" content="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=400"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="400"/>
+    <meta property="article:publisher" content="https://www.facebook.com/AlexBallera.Dev"/>
+    <meta property="article:author" content="https://www.facebook.com/alexballera"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="<?php wp_title('|', true, 'right'); ?>"/>
+    <meta name="twitter:url" content="<?php bloginfo('url'); ?>"/>
+    <meta name="twitter:site" content="@alexballera"/>
+    <meta name="twitter:creator" content="@alexballera"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content="<?php bloginfo('description'); ?>"/>
+    <meta name="twitter:image:src" content="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/03/alexballera825x300.png"/>
+    <meta name="twitter:image" content="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/03/alexballera825x300.png"/>
+    <link rel="canonical" href="http://alexballera.com"/>
+    <link rel="publisher" href="https://plus.google.com/100946240394478170627"/>
+    <link rel="author" href="https://plus.google.com/101028757520419920996"/>
+    <!-- END - Facebook Open Graph, Google+ and Twitter Card Tags -->
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
     <script type="application/ld+json">
@@ -29,7 +58,7 @@
             "@type":"WebPage",
             "@id":"http://alexballera.com"
           },
-          "headline": "Front End Developer, Responsive Design, Mobile Optimization",
+          "headline": "<?php bloginfo('description'); ?>",
           "image": {
             "@type": "ImageObject",
             "url": "http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg",
@@ -52,7 +81,7 @@
               "height": 60
             }
           },
-          "description": "Ha emprendido negocios en diferentes sectores. Actualmente, crea sitios responsivos optimizados para m&#243;viles."
+          "description": "<?php bloginfo('description'); ?>"
         }
     </script>
 

@@ -1,0 +1,27 @@
+form.search-form {
+    margin: 0 auto;
+    text-align: center;
+
+    & label input[type="search"] {
+        line-height: 2rem;
+        padding-left: 0.5rem;
+        @include respond-to(lg) {
+            width: 90%;
+        }
+    }
+
+    & input[type="submit"] {
+        width: 75%;
+        background-color: $black;
+        color: $white;
+        border: none;
+        line-height: 2rem;
+        margin-top: 0.5rem;
+        color: $orange;
+
+        &:hover {
+            background-color: $orange;
+            color: white;
+        }
+    }
+}
