@@ -46,4 +46,19 @@ function wpdocs_filter_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'wpdocs_filter_wp_title', 10, 2 );
 
+function plugin_register_sidebar(){
+  register_sidebar(
+                   array(
+                         'id' => 'sidebar-$i',
+                         'name' => 'Sidebar Lateral',
+                         'description' => 'Área para colocar widget lateral',
+                         'before_title' => '<h3>',
+                         'after_title' => '</h3>',
+                         'before_widget' => '<article class="sidebar__content">',
+                         'after_widget' => '</article>'
+                         )
+                   );
+};
+add_action('init', 'plugin_register_sidebar');
+
 ?>
