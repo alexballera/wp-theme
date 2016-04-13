@@ -36,10 +36,12 @@
             margin-bottom: 2rem;
             color: grey;
             text-align: left;
+            background-color: $black;
+            padding: 1rem;
         }
 
         & ul {
-            background-color: $black;
+            background-color: white;
             text-align: left;
             padding: 1rem;
 
@@ -58,6 +60,7 @@
                 }
             }
         }
+        @import "./mailchimp";
     }
 }
 

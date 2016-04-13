@@ -3,25 +3,29 @@ form.search-form {
     text-align: center;
 
     & label input[type="search"] {
-        line-height: 2rem;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        padding: 1.2rem;
+        line-height: 1.2rem;
         padding-left: 0.5rem;
-        @include respond-to(lg) {
-            width: 90%;
-        }
+        width: 100%;
+
+        // @include respond-to(lg) {
+        //     width: 90%;
+        // }
     }
 
     & input[type="submit"] {
-        width: 75%;
-        background-color: $black;
+        width: 100%;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        padding: 1.2rem;
         color: $white;
         border: none;
-        line-height: 2rem;
-        margin-top: 0.5rem;
-        color: $orange;
+        background-color: $orange;
 
         &:hover {
-            background-color: $orange;
-            color: white;
+            background-color: $purple;
         }
     }
 }
