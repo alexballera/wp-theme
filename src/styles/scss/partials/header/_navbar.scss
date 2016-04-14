@@ -71,7 +71,7 @@
                     @include respond-to(md) {
                         height: $header-height * $header-mult;
                         width: $header-height * $header-mult;
-                        border: 3px solid $white;
+                        // border: 3px solid $white;
                         transition: all 1.2s ease;
                     }
                 }
@@ -198,6 +198,9 @@
                 text-align: center;
                 box-sizing: border-box;
                 width: 100% / $items - 1;
+                // height: 3rem;
+                // line-height: 3rem;
+                // border: 3px solid;
 
                 &:nth-child(4) {
                     background-color: rgba(15, 15, 15, 0.75);
@@ -221,39 +224,42 @@
                 width: 100%;
                 display: block;
                 text-align: left;
-                padding-left: 1em;
+                line-height: 3rem;
+                height: 3rem;
+                // padding-left: 1em;
                 box-sizing: border-box;
-                border-top: 3px solid $orange;
+                // border-top: 3px solid transparent;
                 border-bottom: 3px solid transparent;
                 transition: height .3s ease;
 
+
                 @include respond-to(md) {
                     background-color: transparent;
-                    border-top: 3px solid transparent;
+                    // border-top: 3px solid transparent;
                     box-sizing: border-box;
-                    padding: 0 .5em;
+                    // padding: 0 .5em;
                     text-align: center;
                     font-size: 1.1rem;
-                    height: $header-height * $header-mult;
-                    line-height: $header-height * $header-mult;
+                    // height: $header-height * $header-mult;
+                    // line-height: $header-height * $header-mult;
                 }
 
 
                 @include respond-to(sm-landscape) {
                     padding: 0;
                     text-align: center;
-                    border-top: 3px solid transparent;
+                    // border-top: 3px solid transparent;
                 }
 
 
                 &:hover {
-                    border-top: 3px solid $orange;
+                    border-bottom: 3px solid $orange;
                     background-color: rgba(30, 30, 30, 0.9);
 
                     @include respond-to(md) {
                         box-sizing: border-box;
                         color: $orange;
-                        border-top: 3px solid $orange;
+                        // border-top: 3px solid $orange;
                     }
                 }
             }
