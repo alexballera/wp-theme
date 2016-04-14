@@ -3,7 +3,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <header class="header">
               <picture class="header__picture">
-                  <img src="<?php the_post_thumbnail( $size='thumbnail', $attr ); ?>">
+                  <?php the_post_thumbnail($size='thumbnail'); ?>
               </picture>
         </header>
     <!-- Fin de Header -->
@@ -23,6 +23,7 @@
                                       <i class="fa fa-tags"><?php the_tags($before = '', $sep = ', ', $after = ''); ?></i>
                                       <i class="fa fa-comment"><?php comments_number( $zero = false, $one = true, $more = true ); ?></i>
                                     </section>
+                                  <?php comments_template(); ?>
                                   <?php endwhile; else: ?>
                                   <p>Lo siento, no encontre nada para mostrar.</p>
                                   </div>

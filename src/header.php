@@ -27,7 +27,7 @@
     <meta property="og:locale" content="es_ES"/>
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
     <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?>"/>
-    <meta property="og:url" content="<?php bloginfo('url'); ?>"/>
+    <meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>"/>
     <meta property="og:type" content="blog"/>
     <meta property="og:description" content="<?php bloginfo('description'); ?>"/>
     <meta property="og:image" content="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=400"/>
@@ -37,7 +37,7 @@
     <meta property="article:author" content="https://www.facebook.com/alexballera"/>
     <!-- Twitter Card -->
     <meta name="twitter:title" content="<?php wp_title('|', true, 'right'); ?>"/>
-    <meta name="twitter:url" content="<?php bloginfo('url'); ?>"/>
+    <meta name="twitter:url" content="<?php echo esc_url( home_url( '/' ) ); ?>"/>
     <meta name="twitter:site" content="@alexballera"/>
     <meta name="twitter:creator" content="@alexballera"/>
     <meta name="twitter:card" content="summary_large_image"/>
@@ -90,6 +90,7 @@
     <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
     <![endif]-->
   <?php wp_enqueue_script("jquery"); ?>
+  if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
   <?php wp_head(); ?>
   </head>
   <body <?php body_class('body'); ?>>

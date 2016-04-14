@@ -1,5 +1,7 @@
-<?php 
+<?php
+if ( ! isset( $content_width ) ) $content_width = 900;
 add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 825, 510, true );
 add_theme_support( 'custom-background' );
 add_theme_support( 'custom-header' );
 add_theme_support( 'automatic-feed-links' );
@@ -17,8 +19,8 @@ add_theme_support( 'html5', array(
 function register_my_menus() {
   register_nav_menus(
                      array(
-                           'header-menu' => __( 'Header Menu' ),
-                           'footer-menu' => __( 'Footer Menu' )
+                           'header-menu' => __( 'Header Menu', 'portfolio-one'),
+                           'footer-menu' => __( 'Footer Menu', 'portfolio-one')
                            )
                      );
 }
@@ -47,18 +49,17 @@ function wpdocs_filter_wp_title( $title, $sep ) {
 add_filter( 'wp_title', 'wpdocs_filter_wp_title', 10, 2 );
 
 function plugin_register_sidebar(){
-  register_sidebar(
-                   array(
+  register_sidebar(array(
                          'id' => 'sidebar-$i',
                          'name' => 'Sidebar Lateral',
-                         'description' => 'Área para colocar widget lateral',
+                         'description' => '&#193;rea para colocar widget lateral',
                          'before_title' => '<h3>',
                          'after_title' => '</h3>',
                          'before_widget' => '<article class="sidebar__content">',
                          'after_widget' => '</article>'
                          )
-                   );
+  );
 };
-add_action('init', 'plugin_register_sidebar');
+add_action('widgets_init', 'plugin_register_sidebar');
 
 ?>

@@ -27,8 +27,8 @@
               </section>
               <div class="header__message">
                 <span>Error 404</span>
-                <p>Página No Encontrada</p>
-                <p>Visita: <a href="http://alexballera.com" target="_blank">alexballera.com</a></p>
+                <p>P&#225;gina No Encontrada</p>
+                <p>Visita: <a href="<?php echo esc_url( home_url( '/' ) ); ?>" target="_blank"><?php echo esc_url( home_url( '/' ) ); ?></a></p>
               </div>
         </header>
     <!-- Fin de Header -->
