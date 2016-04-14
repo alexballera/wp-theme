@@ -1,0 +1,9 @@
+form.search-form {
+    & label input[type="search"] {
+        font-size: 1rem;
+        padding: 0.25rem;
+        line-height: 1rem;
+        padding-left: 0.5rem;
+        width: 60%;
+    }
+}

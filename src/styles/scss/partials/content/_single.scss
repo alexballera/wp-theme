@@ -161,6 +161,9 @@ form.contact-form {
         line-height: 1.5rem;
         padding: 1.5rem;
         font-family: $font-awesome;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
 
         &:hover {
             background-color: $orange;
@@ -187,7 +190,7 @@ form.contact-form {
 * Disqus
 */
 div#disqus_thread {
-    width: 85%;
+    width: 100%;
     margin: 1rem auto;
     padding: 1rem;
 }

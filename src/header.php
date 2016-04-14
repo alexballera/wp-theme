@@ -120,5 +120,6 @@
                   <button id="btnMenu" class="nav__mobile--btn inactive active"><i id="btnButton" class="fa fa-bars"></i></button>
             </div>
             <?php get_template_part('/templates/nav-header'); ?>
+            <?php get_template_part('/templates/searchform'); ?>
         </nav>
     <!-- Fin de Barra de Navegaci&#243;n -->
