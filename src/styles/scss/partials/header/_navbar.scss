@@ -42,7 +42,7 @@
 
         @include respond-to(md) {
             height: $header-height * $header-mult;
-            width: 30%;
+            width: 35%;
         }
 
 
@@ -56,10 +56,14 @@
 
             &--picture {
                 transition: all 1.2s ease;
+                margin-right: 5rem;
 
                 // @include respond-to(xs) {
                 //     display: flex;
                 // }
+                @include respond-to(md) {
+                    margin-right: 0;
+                }
 
 
                 & img {
@@ -75,6 +79,7 @@
                         width: $header-height * $header-mult;
                         // border: 3px solid $white;
                         transition: all 1.2s ease;
+                        // margin-right: 0;
                     }
                 }
 
