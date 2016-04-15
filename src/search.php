@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- Header -->
 <header class="header taxonomy">
-  <h1 class="taxonomy__title">Resultados de tu búsqueda: <?php the_search_query(); ?></h1>
+  <h1 class="taxonomy__title">Resultados de tu b&#250;squeda: <?php the_search_query(); ?></h1>
 </header>
 <!-- Fin de Header -->
 <!-- Contenido -->
