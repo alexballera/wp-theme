@@ -27,21 +27,22 @@
         height: $header-height * $header-mult;
         line-height: $header-height * $header-mult;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        justify-content: space-around;
     }
 
 
     &__mobile {
         display: flex;
         justify-content: space-between;
-        margin-left: 3em;
-        transition: all 0.3s ease;
+        // margin-left: 3em;
+        transition: height 0.3s ease;
         height: $header-height;
 
         @include respond-to(md) {
             height: $header-height * $header-mult;
+            width: 30%;
         }
 
 
@@ -50,14 +51,15 @@
             height: auto;
             vertical-align: middle;
             display: flex;
+            margin: 0 auto;
             order: 1;
 
             &--picture {
                 transition: all 1.2s ease;
 
-                @include respond-to(xs) {
-                    display: flex;
-                }
+                // @include respond-to(xs) {
+                //     display: flex;
+                // }
 
 
                 & img {
@@ -164,8 +166,8 @@
         width: 100%;
 
         @include respond-to(md) {
-            width: 20%;
-            margin-left: 25%;
+            width: 50%;
+            // margin-left: 25%;
         }
 
 
@@ -183,6 +185,7 @@
 
         @include respond-to(md) {
             height: $header-height * $header-mult;
+            text-align: right;
         }
 
 
@@ -197,7 +200,7 @@
                 margin: 0;
                 text-align: center;
                 box-sizing: border-box;
-                width: 100% / $items - 1;
+                width: 25%;
                 // height: 3rem;
                 // line-height: 3rem;
                 // border: 3px solid;
