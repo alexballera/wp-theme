@@ -12,6 +12,14 @@
         & p {
             letter-spacing: 1.1px;
             line-height: 1.1rem;
+            & strong{
+                font-weight: 700;
+            }
+        }
+        & img{
+            display: block;
+            width: 100px;
+            height: 100px;
         }
     }
 }
