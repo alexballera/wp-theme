@@ -26,28 +26,6 @@ function register_my_menus() {
 }
 add_action('init', 'register_my_menus');
 
-function wpdocs_filter_wp_title( $title, $sep ) {
-    global $paged, $page;
- 
-    if ( is_feed() )
-        return $title;
- 
-    // Add the site name.
-    $title .= get_bloginfo( 'name' );
- 
-    // Add the site description for the home/front page.
-    $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() || is_category() || is_single() || is_page() || is_author() ) )
-        $title = "$title $sep $site_description";
- 
-    // Add a page number if necessary.
-    if ( $paged >= 2 || $page >= 2 )
-        $title = "$title $sep " . sprintf( __( 'Page %s', 'portfolio-one' ), max( $paged, $page ) );
- 
-    return $title;
-}
-add_filter( 'wp_title', 'wpdocs_filter_wp_title', 10, 2 );
-
 function plugin_register_sidebar(){
   register_sidebar(array(
                          'id' => 'sidebar-$i',
@@ -64,7 +42,7 @@ add_action('widgets_init', 'plugin_register_sidebar');
 
 function insertScript(){
     if( !is_admin() ){
-        wp_register_script('myScript', get_bloginfo('template_directory'). '/js/main.min.js', array('jquery'), '1', true );
+        wp_register_script('myScript', get_template_directory_uri(). '/js/main.min.js', array('jquery'), '1', true );
         wp_enqueue_script('myScript');
     }
 }
