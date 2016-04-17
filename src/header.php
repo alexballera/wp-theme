@@ -90,7 +90,7 @@
     <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
     <![endif]-->
   <?php wp_enqueue_script("jquery"); ?>
-  if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+  <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php wp_head(); ?>
   </head>
   <body <?php body_class('body'); ?>>

@@ -1,4 +1,4 @@
-var navbarMenu = document.getElementById('navbarMenu')
+var navbarMenu = document.getElementById('menu-header')
 var btnMenu = document.getElementById('btnMenu')
 var btnButton = document.getElementById('btnButton')
 

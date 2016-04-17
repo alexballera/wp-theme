@@ -62,4 +62,12 @@ function plugin_register_sidebar(){
 };
 add_action('widgets_init', 'plugin_register_sidebar');
 
+function insertScript(){
+    if( !is_admin() ){
+        wp_register_script('myScript', get_bloginfo('template_directory'). '/js/main.min.js', array('jquery'), '1', true );
+        wp_enqueue_script('myScript');
+    }
+}
+add_action("wp_enqueue_scripts", "insertScript", 11);
+
 ?>
