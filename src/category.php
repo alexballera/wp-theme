@@ -2,7 +2,7 @@
         <!-- Header -->
         <header class="header taxonomy">
                 <?php if ( is_category() ) : ?>
-                <h1 class="taxonomy__title">Categor&#237;a: <?php single_cat_title(); ?></h1>
+                <h1 class="taxonomy__title"><?php single_cat_title(); ?></h1>
                 <?php add_filter('category_description', 'wpautop'); ?>
                 <?php add_filter('category_description', 'wptexturize'); ?>
                 <div class="taxonomy__description">

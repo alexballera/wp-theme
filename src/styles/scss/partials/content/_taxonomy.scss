@@ -7,11 +7,12 @@
 
     &__description {
         width: 60%;
-        margin: 0 auto;
+        margin: 1rem auto 0 auto;
 
         & p {
-            letter-spacing: 1.1px;
-            line-height: 1.1rem;
+            letter-spacing: 1.2px;
+            line-height: 1.4rem;
+            font-size: 1.2rem;
             & strong{
                 font-weight: 700;
             }
@@ -20,6 +21,7 @@
             display: block;
             width: 100px;
             height: 100px;
+            margin-bottom: 1rem;
         }
     }
 }

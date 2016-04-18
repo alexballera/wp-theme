@@ -2,6 +2,7 @@
 <!-- Header -->
 <header class="header taxonomy">
   <h1 class="taxonomy__title"><?php _e( 'Autor: ', 'portfolio-one' ); ?><?php echo get_the_author(); ?></h1>
+  <?php echo get_avatar( get_the_author_meta('ID'), $size = '150'); ?>
   <div class="taxonomy__description">
     <?php the_author_meta( 'description' ); ?>
   </div>
