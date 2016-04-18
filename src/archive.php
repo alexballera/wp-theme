@@ -1,12 +1,10 @@
   <?php get_header(); ?>
         <!-- Header -->
         <header class="header taxonomy">
-                <h1 class="taxonomy__title"><?php single_cat_title(); ?></h1>
-                <?php add_filter('category_description', 'wpautop'); ?>
-                <?php add_filter('category_description', 'wptexturize'); ?>
-                <div class="taxonomy__description">
-                <?php echo category_description(); ?>
-                </div>
+                <?php
+                    the_archive_title( '<h1 class="taxonomy__title">', '</h1>' );
+                    the_archive_description( '<div class="taxonomy__description">', '</div>' );
+                ?>
         </header>
     <!-- Fin de Header -->
     <!-- Contenido -->
@@ -18,7 +16,7 @@
                             <article id="content_articles" class="content__articles content__articles--background">
                                   <div class="container">
                                         <div id="articles"></div>
-                                        <h2 class="content__articles--title title">Disfruta de los art&#237;culos de <?php single_cat_title(); ?></h2>
+                                        <h2 class="content__articles--title title">Disfruta de los art&#237;culos de <?php the_archive_title(); ?></h2>
                                         <?php get_template_part('/templates/content'); ?>
                                   </div>
                             </article>
