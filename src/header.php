@@ -22,8 +22,6 @@
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.min.js"></script>
     <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
     <![endif]-->
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
-  <?php wp_enqueue_script("jquery"); ?>
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
   <?php wp_head(); ?>
   </head>
