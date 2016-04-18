@@ -1,7 +1,6 @@
   <?php get_header(); ?>
         <!-- Header -->
         <header class="header taxonomy">
-                <?php if ( is_category() ) : ?>
                 <h1 class="taxonomy__title"><?php single_cat_title(); ?></h1>
                 <?php add_filter('category_description', 'wpautop'); ?>
                 <?php add_filter('category_description', 'wptexturize'); ?>
@@ -19,7 +18,7 @@
                             <article id="content_articles" class="content__articles content__articles--background">
                                   <div class="container">
                                         <div id="articles"></div>
-                                        <h2 class="content__articles--title title">Disfruta de los art&#237;culos de la categor&#237;a <?php single_cat_title(); ?></h2>
+                                        <h2 class="content__articles--title title">Disfruta de los art&#237;culos de <?php single_cat_title(); ?></h2>
                                         <?php get_template_part('/templates/content'); ?>
                                   </div>
                             </article>
@@ -31,5 +30,4 @@
         </section>
     <?php get_template_part('/templates/form'); ?>
     <!-- Fin del Contenido -->
-    <?php endif; ?>
     <?php get_footer(); ?>
