@@ -15,7 +15,7 @@
                   <h2 class="header__picture--figcaption">
                       <span>Alex Ballera
                       <span>Front End Developer</span></span>
-                      <span>Mobile Optimization & Responsive Web Design</span>
+                      <span>Mobile Optimization & Responsive Design</span>
                   </h2>
                     <ul class="header__languages--tech">
                           <li><i class="fa fa-html5"></i></li>

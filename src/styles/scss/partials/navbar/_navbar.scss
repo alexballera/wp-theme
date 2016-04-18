@@ -20,15 +20,12 @@
     left: 0;
     width: 100%;
     z-index: 11;
-    // transition: all 1.2s ease;
     background-color: $black;
 
     @include respond-to(md) {
         height: $header-height * $header-mult;
         line-height: $header-height * $header-mult;
         display: flex;
-        // flex-direction: row;
-        // flex-wrap: wrap;
         justify-content: space-around;
     }
 
@@ -36,8 +33,6 @@
     &__mobile {
         display: flex;
         justify-content: space-between;
-        // margin-left: 3em;
-        // transition: height 0.3s ease;
         height: $header-height;
 
         @include respond-to(md) {
@@ -55,12 +50,8 @@
             order: 1;
 
             &--picture {
-                // transition: all 1.2s ease;
                 margin-right: 5rem;
 
-                // @include respond-to(xs) {
-                //     display: flex;
-                // }
                 @include respond-to(xs) {
                     margin-right: 0;
                 }
@@ -79,7 +70,6 @@
                         width: $header-height * $header-mult;
                         border: 3px solid $white;
                         transition: all 1.2s ease;
-                        // margin-right: 0;
                     }
                 }
 
@@ -99,22 +89,18 @@
                 margin-left: .5em;
                 font-size: 1.2em;
                 display: none;
-                // transition: all 1.2s ease;
 
                 @include respond-to(xs) {
-                    // transition: all 1.2s ease;
                     display: block;
                 }
 
 
                 @include respond-to(md) {
-                    // transition: all 1.2s ease;
                     display: none;
                 }
 
 
                 @include respond-to(lg) {
-                    // transition: all 1.2s ease;
                     display: block;
                 }
 
@@ -172,12 +158,6 @@
 
         @include respond-to(md) {
             width: 50%;
-            // margin-left: 25%;
-        }
-
-
-        @include respond-to(sm-landscape) {
-            width: 100vw;
         }
     }
 
@@ -185,30 +165,28 @@
         height: 0;
         overflow: hidden;
         list-style-type: none;
-        // margin-right: 2em;
-        // transition: all 0.3s ease;
+        display: flex;
+        flex-wrap: wrap;
 
         @include respond-to(md) {
             height: $header-height * $header-mult;
             text-align: right;
+            justify-content: flex-end;
         }
 
 
         &--show {
             height: 100%;
-            // transition: all 2s ease;
         }
 
         & li {
+            width: 100%;
+
             @include respond-to(md) {
-                display: inline-block;
                 margin: 0;
                 text-align: center;
                 box-sizing: border-box;
                 width: 25%;
-                // height: 3rem;
-                // line-height: 3rem;
-                // border: 3px solid;
 
                 &:nth-child(4) {
                     background-color: rgba(15, 15, 15, 0.75);
@@ -217,10 +195,9 @@
 
 
             @include respond-to(sm-landscape) {
-                display: inline-block;
                 margin: 0 auto;
                 text-align: center;
-                width: 100% / $items - 1;
+                width: 100% / $items;
                 padding: 0;
             }
 
@@ -236,27 +213,18 @@
                 height: 3rem;
                 box-sizing: border-box;
                 border-bottom: 3px solid transparent;
-                // padding-left: 1em;
-                // border-top: 3px solid transparent;
-                // transition: height .3s ease;
-
 
                 @include respond-to(md) {
                     background-color: transparent;
-                    // border-top: 3px solid transparent;
                     box-sizing: border-box;
-                    // padding: 0 .5em;
                     text-align: center;
                     font-size: 1.1rem;
-                    // height: $header-height * $header-mult;
-                    // line-height: $header-height * $header-mult;
                 }
 
 
                 @include respond-to(sm-landscape) {
                     padding: 0;
                     text-align: center;
-                    // border-top: 3px solid transparent;
                 }
 
 
@@ -267,7 +235,6 @@
                     @include respond-to(md) {
                         box-sizing: border-box;
                         color: $orange;
-                        // border-top: 3px solid $orange;
                     }
                 }
             }
