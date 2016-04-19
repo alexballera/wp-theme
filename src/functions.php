@@ -53,4 +53,25 @@ function insertStyle() {
 }
 add_action( 'wp_enqueue_scripts', 'insertStyle' );
 
+$arg = array(
+             'before' => '<p>' . __( 'P&#225;ginas:', 'portfolio-one' ),
+             'after' => '</p>',
+             'link_before'      => '',
+             'link_after'       => '',
+             'next_or_number'   => 'number',
+             'separator'        => ' ',
+             'nextpagelink'     => __( 'Pr&#243;ximo', 'portfolio-one' ),
+             'previouspagelink' => __( 'Anterior', 'portfolio-one' ),
+             'pagelink'         => '%',
+             'echo'             => 1
+             );
+wp_link_pages( $arg );
+
+$value = array(
+        'prev_text'          => __( 'Previous page', 'portfolio-one' ),
+        'next_text'          => __( 'Next page', 'portfolio-one' ),
+        'mid_size' => 2,
+        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'portfolio-one' ) . ' </span>',
+      );
+the_posts_pagination($value);
 ?>

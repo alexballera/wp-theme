@@ -21,6 +21,7 @@ if ( post_password_required() ) {
       ?>
     </h2>
 
+    <?php the_comments_navigation(); ?>
     <ol class="comment-list">
       <?php
         wp_list_comments( array(

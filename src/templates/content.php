@@ -19,6 +19,8 @@
   </div>
   <?php endwhile; else: ?>
   <p>Lo siento, no encontre nada para mostrar.</p>
+  <?php wp_link_pages( $args ); ?>
+  <?php the_posts_pagination($value); ?>
   <?php endif; ?>
 </div>
 <!-- Fin de los Art&#237;culos -->

@@ -1,6 +1,6 @@
 <section class="sidebar">
   <?php dynamic_sidebar('sidebar-lateral'); ?>
-  <article class="sidebar__content">
+<!--   <article class="sidebar__content">
     <h3>&#218;ltimos art&#237;culos</h3>
     <ul>
     <?php if ( have_posts() ) : $i = 1; while (have_posts() && $i < 6) : the_post(); ?>
@@ -13,5 +13,5 @@
     </ul>
     <p>Lo siento, no encontre nada para mostrar.</p>
     <?php endif; ?>
-  </article>
+  </article> -->
 </section><!-- end of sidebar -->
