@@ -11,6 +11,7 @@
         <section class="content">
             <div class="container">
               <div class="content__container">
+              <div class="breadcrumb"><?php the_breadcrumb(); ?></div>
                 <!-- Servicios, Proyectos & Art&#237;culos -->
                       <!-- Art&#237;culos -->
                             <article id="content_articles" class="content__articles content__articles--background">

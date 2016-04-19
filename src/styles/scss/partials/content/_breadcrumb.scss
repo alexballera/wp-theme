@@ -1,0 +1,22 @@
+.breadcrumb {
+    width: 100%;
+    text-align: left;
+    display: block;
+    margin-bottom: 1rem;
+
+    & p {
+        font-size: 1rem;
+        color: grey;
+        @include respond-to(md) {
+          font-size: 1.5rem;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $orange;
+            &:hover{
+              color: $purple;
+            }
+        }
+    }
+}

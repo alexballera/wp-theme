@@ -17,10 +17,13 @@
       <i class="fa fa-tags"><?php the_tags($before = '', $sep = ', ', $after = ''); ?></i>
     </section>
   </div>
-  <?php endwhile; else: ?>
+  <?php endwhile; ?>
+  <?php wp_link_pages(); ?>
+  <?php the_posts_pagination(); ?>
+  <div class="navigation"><?php wp_pagenavi(); ?></div>
+
+  <?php else: ?>
   <p>Lo siento, no encontre nada para mostrar.</p>
-  <?php wp_link_pages( $args ); ?>
-  <?php the_posts_pagination($value); ?>
   <?php endif; ?>
 </div>
 <!-- Fin de los Art&#237;culos -->

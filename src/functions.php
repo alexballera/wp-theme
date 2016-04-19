@@ -74,4 +74,55 @@ $value = array(
         'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'portfolio-one' ) . ' </span>',
       );
 the_posts_pagination($value);
+
+function wp_pagenavi() {
+ global $wp_query, $wp_rewrite;
+ $pages = '';
+ $max = $wp_query->max_num_pages;
+ if (!$current = get_query_var('paged')) $current = 1;
+ $args['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
+ $args['total'] = $max;
+ $args['current'] = $current;
+$total = 1;
+ $args['mid_size'] = 3;
+ $args['end_size'] = 1;
+ $args['prev_text'] = '<i class="fa fa-chevron-left"></i>';
+ $args['next_text'] = '<i class="fa fa-chevron-rigth"></i>';
+if ($max > 1) echo '<div class="wp-pagenavi">';
+ if ($total == 1 && $max > 1) $pages = '<span class="pages">P&aacute;gina ' . $current . ' de ' . $max . '</span>';
+ echo $pages . paginate_links($args);
+ if ($max > 1) echo '</div>';
+ }
+
+ /*Breadcrumbs*/
+function the_breadcrumb() {
+ echo '<p>';
+ if (!is_front_page()) {
+ echo '<a href="';
+ echo home_url();
+ echo '">';
+ echo 'Inicio';
+ echo "</a> &raquo; ";
+ if (is_category() || is_single()) {
+ the_category(' &raquo; ');
+ if (is_single()) { echo the_title(); }
+ } elseif (is_page()) { echo the_title(); }
+ elseif (is_tag()) { single_tag_title(); }
+ elseif (is_day()) { echo "Archivo de "; the_date( get_option( 'date_format' ) );}
+ elseif (is_month()) { echo "Archivo de "; the_date( get_option( 'date_format' ) ); }
+ elseif (is_year()) { echo "Archivo de "; the_date( get_option( 'date_format' ) ); }
+ elseif (is_author()) { echo "Archivo de Autor"; }
+ elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { echo "Archivo"; }
+ elseif (is_search()) { echo "Resultados de b&uacute;squeda";}
+ elseif (is_404()) { echo "Error 404";}
+ }else{
+ echo '<a href="';
+ echo home_url();
+ echo '">';
+ echo 'Inicio';
+ echo "</a>";
+ }
+ echo '</p>';
+}
+/*End of Breadcrumbs*/
 ?>
