@@ -14,6 +14,7 @@
         width: 24%;
         margin-left: 1%;
         margin-top: 0;
+        display: block;
     }
 
 
@@ -24,11 +25,13 @@
 
         @include respond-to(mm) {
             width: 50%;
+            box-sizing: border-box;
         }
 
 
         @include respond-to(lg) {
             width: 100%;
+            box-sizing: border-box;
         }
 
 

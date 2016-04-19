@@ -13,7 +13,6 @@
 
     &--container {
         box-sizing: border-box;
-        height: 100%;
 
         @include respond-to(md) {
             display: flex;
