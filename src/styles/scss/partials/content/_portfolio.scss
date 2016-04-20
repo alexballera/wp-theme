@@ -1,0 +1,95 @@
+.portfolio {
+    &__container {
+        width: 940px;
+        float: left;
+        margin: 3rem 0 20px 20px;
+    }
+
+    &__titulo {
+        width: 85px;
+        color: #7ec5ff;
+        font-weight: bold;
+        float: left;
+        text-align: right;
+        margin: 0 5px 0 0;
+    }
+
+    &__one {
+        width: 670px;
+        float: left;
+
+        &--detalle {
+            width: 650px;
+            padding: 10px;
+            margin: 0 0 20px 0;
+            background-color: #f4f4f4;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            display: block;
+            float: left;
+
+            & img {
+                float: left;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+
+    &__two {
+        width: 560px;
+        float: left;
+
+        &--detalle {
+            width: 320px;
+            padding: 10px;
+            margin: 0 0 20px 0px;
+            background-color: #f4f4f4;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            display: block;
+            float: right;
+        }
+
+        &--sidebar {
+            width: 340px;
+            margin: 20px 0 0 10px;
+            padding: 0 0 0 10px;
+            border-left: 1px solid #f4f4f4;
+            float: left;
+        }
+    }
+
+    &__sidebar {
+        width: 230px;
+        margin: 20px 0 0 20px;
+        float: left;
+
+        &--item {
+            width: 230px;
+            border: 1px solid #7ec5ff;
+            float: left;
+            display: block;
+            margin: 0 0 20px 0;
+            background-color: #7ec5ff;
+
+            & img {
+                margin: 0;
+                padding: 0;
+            }
+
+            & h3 {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px 0 0 0;
+                color: white;
+            }
+
+            & h3 a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
