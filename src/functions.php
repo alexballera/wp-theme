@@ -47,7 +47,6 @@ function insertScript(){
     }
 }
 add_action("wp_enqueue_scripts", "insertScript", 11);
-
 function insertStyle() {
     wp_enqueue_style( 'mytheme-style', get_stylesheet_uri() ); 
 }
@@ -190,6 +189,7 @@ function register_portfoliotaxonomies() {
     register_taxonomy('portfoliotaxonomies', $pages, $args);
 }
 add_action('init', 'register_portfoliotaxonomies');
+add_image_size( 'portfolioitem', 230,230, true );
 
 /* Metabox */
 $meta_box = array(
@@ -225,9 +225,9 @@ $meta_box = array(
  'id' => 'layout',
  'type' => 'radio',
  'options' => array(
- array('name' => 'Layout1', 'value' => 'Layout1'),
- array('name' => 'Layout2', 'value' => 'Layout2'),
- array('name' => 'Layout3', 'value' => 'Layout3')
+ array('name' => 'Layout1', 'value' => 'Layout 1'),
+ array('name' => 'Layout2', 'value' => 'Layout 2'),
+ array('name' => 'Layout3', 'value' => 'Layout 3')
  )
  )
  )
@@ -313,4 +313,25 @@ function mytheme_save_data($post_id) {
 add_image_size( 'portfolio', 230,130, true );
 add_image_size( 'layout2', 340, 300, true);
 /*End of Portfolio*/
+
+/* Convertir la primera imágen en destacada */
+function autoset_featured() {
+ global $post;
+ $already_has_thumb = has_post_thumbnail($post->ID);
+ if (!$already_has_thumb) {
+ $attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
+ if ($attached_image) {
+ foreach ($attached_image as $attachment_id => $attachment) {
+ set_post_thumbnail($post->ID, $attachment_id);
+ }
+ }
+ }
+ } //end function
+add_action('the_post', 'autoset_featured');
+add_action('save_post', 'autoset_featured');
+add_action('draft_to_publish', 'autoset_featured');
+add_action('new_to_publish', 'autoset_featured');
+add_action('pending_to_publish', 'autoset_featured');
+add_action('future_to_publish', 'autoset_featured');
+/* Fin convertir la primera imágen en destacada */
 ?>

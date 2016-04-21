@@ -38,6 +38,7 @@
                                         <div id="articles"></div>
                                         <h2 class="content__articles--title title">&#191;Qu&#233; quieres aprender hoy?</h2>
                                         <?php get_template_part('/templates/content'); ?>
+                                        <?php get_template_part('/templates/content-portfolio'); ?>
                             </article>
                       <!-- Fin de Art&#237;culos -->
                 <!-- Fin de Servicios, Proyectos & Art&#237;culos -->

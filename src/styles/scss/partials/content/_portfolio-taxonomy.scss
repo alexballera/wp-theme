@@ -1,0 +1,43 @@
+/* plantilla taxonomia */
+.portfolioItem {
+    width: 230px;
+    height: 230px;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    & a {
+        color: white;
+        text-decoration: none;
+
+        & img {
+            border: none;
+            margin: 0;
+        }
+    }
+
+    &:hover .portfolioItemDetalle {
+        display: block;
+    }
+}
+
+.portfolioItemDetalle {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(images/darky.png);
+    background-repeat: repeat;
+    padding: 10px;
+    width: 210px;
+    height: 210px;
+    color: white;
+    margin: 0;
+
+    & h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+    }
+}
