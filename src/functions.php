@@ -226,7 +226,8 @@ $meta_box = array(
  'type' => 'radio',
  'options' => array(
  array('name' => 'Layout1', 'value' => 'Layout1'),
- array('name' => 'Layout2', 'value' => 'Layout2')
+ array('name' => 'Layout2', 'value' => 'Layout2'),
+ array('name' => 'Layout3', 'value' => 'Layout3')
  )
  )
  )

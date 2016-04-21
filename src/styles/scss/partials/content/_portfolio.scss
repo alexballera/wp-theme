@@ -62,7 +62,7 @@
     }
 
     &__three{
-      width: 1/3%;
+      @import './wp-content';
     }
 
     &__sidebar {

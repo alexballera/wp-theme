@@ -59,12 +59,11 @@ if ($layout == 'Layout1') {
 <?php endwhile; endif; ?>
 <?php } else { ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
- <div class="dos-tercios listado">
+ <div class="portfolio__three">
  <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
  <?php the_content(); ?>
  </div><!-- end of dos-tercios -->
-<?php endwhile; endif;
-get_sidebar(); ?>
+<?php endwhile; endif; ?>
 <?php } ?>
 </div><!-- end of wrapper-->
 </div>
