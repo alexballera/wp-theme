@@ -12,9 +12,9 @@ if ($layout == 'Layout1') {
     <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
         <div class="portfolio__one--detalle">
             <?php the_post_thumbnail('thumb'); ?>
-            <?php echo '<p><div class="portfolio__titulo">Cliente</div> '.$cliente;
-            echo '<br /><div class="portfolio__titulo">Socios</div> '.$socios;
-            echo '<br /><div class="portfolio__titulo">Decripcion</div> '.$descripcion.'</p>'?>
+            <?php echo '<p><div class="portfolio__titulo">Cliente: </div> '.$cliente;
+            echo '<br /><div class="portfolio__titulo">Socios: </div> '.$socios;
+            echo '<br /><div class="portfolio__titulo">Decripcion: </div> '.$descripcion.'</p>'?>
         </div>
     <?php the_content(); ?>
     </div><!-- end of portfolioUno -->
@@ -49,10 +49,10 @@ if ($layout == 'Layout1') {
  <?php the_content(); ?>
  </div><!-- end of portfolioDos -->
  <div class="portfolio__two--sidebar">
- <div class="portfolioDosDetalle">
- <?php echo '<p><div class="portfolio__titulo">Cliente</div> '.$cliente;
- echo '<br /><div class="portfolio__titulo">Socios</div> '.$socios;
- echo '<br /><div class="portfolio__titulo">Decripcion</div> '.$descripcion.'</p>'?>
+ <div class="portfolio__two--detalle">
+ <?php echo '<p><div class="portfolio__titulo">Cliente: </div> '.$cliente;
+ echo '<br /><div class="portfolio__titulo">Socios: </div> '.$socios;
+ echo '<br /><div class="portfolio__titulo">Decripcion: </div> '.$descripcion.'</p>'?>
  </div>
  <?php the_post_thumbnail('layout2'); ?>
  </div>
