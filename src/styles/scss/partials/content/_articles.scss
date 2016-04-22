@@ -38,23 +38,22 @@
             }
         }
 
-        @include respond-to(md) {
-            margin: 0.3rem;
-            position: relative;
-            border: none;
-            padding-right: 0;
-        }
-
-
         @include respond-to(sm) {
             width: 48%;
         }
 
 
         @include respond-to(md) {
-            width: 30%;
+            // margin: 0.3rem;
+            position: relative;
+            border: none;
+            padding-right: 0;
         }
 
+
+        @include respond-to(md) {
+            width: 30%;
+        }
 
         @include respond-to(xl) {
             width: $width * 3.85;
