@@ -9,7 +9,6 @@ if ($layout == 'Layout1') {
  $descripcion = get_post_meta(get_the_id(), 'descripcion', TRUE);
  ?>
     <div class="portfolio__one">
-    <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
         <div class="portfolio__one--detalle">
             <?php the_post_thumbnail('thumb'); ?>
             <?php echo '<p><div class="portfolio__titulo">Cliente: </div> '.$cliente;
@@ -45,7 +44,6 @@ if ($layout == 'Layout1') {
  $descripcion = get_post_meta(get_the_id(), 'descripcion', TRUE);
  ?>
  <div class="portfolio__two">
- <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
  <?php the_content(); ?>
  </div><!-- end of portfolioDos -->
  <div class="portfolio__two--sidebar">
@@ -60,7 +58,6 @@ if ($layout == 'Layout1') {
 <?php } else { ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  <div class="portfolio__three">
- <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
  <?php the_content(); ?>
  </div><!-- end of dos-tercios -->
 <?php endwhile; endif; ?>
