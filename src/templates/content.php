@@ -1,6 +1,9 @@
+<div id="articles"></div>
 <!-- Inicio de los Art&#237;culos -->
+  <?php if ( have_posts() ) : ?>
+  <h2 class="content__articles--title title">&#191;Qu&#233; quieres aprender hoy?</h2>
 <div class="content__articles--container">
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <?php while ( have_posts() ) : the_post(); ?>
   <div id="post-<?php the_ID(); ?>" <?php post_class( 'content__articles--post' ); ?>>
     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank">
       <section>
@@ -17,9 +20,6 @@
   <?php wp_link_pages(); ?>
   <?php the_posts_pagination(); ?>
   <div class="navigation"><?php wp_pagenavi(); ?></div>
-
-  <?php else: ?>
-  <p>Lo siento, no encontre nada para mostrar.</p>
   <?php endif; ?>
 </div>
 <!-- Fin de los Art&#237;culos -->
