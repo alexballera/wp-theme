@@ -6,7 +6,6 @@
     background-color: #fff;
     border-top: 1px solid #eaeaea;
     border-top: 1px solid rgba(51, 51, 51, 0.1);
-    padding: 7.6923%;
 
     & > :last-child {
         margin-bottom: 0;
@@ -244,8 +243,11 @@
     text-align: left;
 }
 
-.logged-in-as a:hover {
-    border-bottom: 1px solid #333;
+.logged-in-as a{
+    color: $orange;
+    &:hover {
+        color: $purple;
+    }
 }
 
 .no-comments {

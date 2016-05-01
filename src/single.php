@@ -12,7 +12,8 @@
               <!-- Servicios, Proyectos & Art&#237;culos -->
                     <!-- Art&#237;culos -->
                           <article class="container">
-                                <div>
+                                <div class="content__container">
+                                <div class="content__container--inner">
                                   <div id="post-<?php the_ID(); ?>" <?php post_class( 'content__single' ); ?>>
                                     <h1 class="content__single--title"><?php the_title(); ?></h1>
                                     <div class="content__single--text"><?php the_content(); ?></div>
@@ -27,7 +28,9 @@
                                   <?php endwhile; else: ?>
                                   <p>Lo siento, no encontre nada para mostrar.</p>
                                   </div>
-                                </div>
+               <?php get_sidebar(); ?>
+               </div>
+            </div>
                           </article>
                     <!-- Fin de Art&#237;culos -->
               <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
