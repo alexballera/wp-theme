@@ -31,21 +31,29 @@
     <!-- Contenido -->
         <section class="content">
             <div class="container">
-              <div class="content__container">
+            <div class="content__container">
+              <div class="content__container--inner">
                 <!-- Servicios, Proyectos & Art&#237;culos -->
+                      <!-- Proyectos -->
+                            <article id="content_articles" class="content__articles">
+                                        <div id="projects"></div>
+                                        <h2 class="content__articles--title title">Conoce un poco de los proyectos que he realizado y en los que he participado</h2>
+                                        <?php get_template_part('/templates/content-portfolio'); ?>
+                            </article>
+                      <!-- Fin de Proyectos -->
                       <!-- Art&#237;culos -->
                             <article id="content_articles" class="content__articles">
                                         <div id="articles"></div>
                                         <h2 class="content__articles--title title">&#191;Qu&#233; quieres aprender hoy?</h2>
                                         <?php get_template_part('/templates/content'); ?>
-                                        <?php get_template_part('/templates/content-portfolio'); ?>
                             </article>
                       <!-- Fin de Art&#237;culos -->
                 <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
-                <?php get_sidebar(); ?>
               </div>
+               <?php get_sidebar(); ?>
+               </div>
             </div>
         </section>
-    <?php get_template_part('/templates/form'); ?>
     <!-- Fin del Contenido -->
+    <?php get_template_part('/templates/form'); ?>
     <?php get_footer(); ?>
