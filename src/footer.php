@@ -52,7 +52,7 @@
                 <li><a href="<?php echo esc_url( __('https://github.com/alexballera', 'portfolio-one')); ?>" target="_blank"><i class="fa fa-github-alt"></i></a></li>
                 <li><a href="mailto:alex@alexballera.com"><i class="fa fa-envelope-o"></i></a></li>
                 </ul>
-                  <a class="informacion__boton" href="#contactame"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
+                  <a class="informacion__boton" href="<?php echo esc_url( __('http://alexballera.com/contactame.html', 'portfolio-one')); ?>" target="_blank"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
                 <div class="footer__validation">
                   <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Falexballera.com%2F" target="_blank">
                     <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/W3C_HTML5_certified.png?w=65" alt="Valid HTML" title="Validate HTML5" />
