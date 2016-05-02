@@ -27,14 +27,14 @@
                                   <?php comments_template(); ?>
                                   <?php endwhile; else: ?>
                                   <p>Lo siento, no encontre nada para mostrar.</p>
+                                  <?php endif; ?>
                                   </div>
-               <?php get_sidebar(); ?>
-               </div>
-            </div>
+                               </div>
+                              <?php get_sidebar(); ?>
+                            </div>
                           </article>
                     <!-- Fin de Art&#237;culos -->
               <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
-              <?php endif; ?>
         </section>
         <?php get_template_part('/templates/form'); ?>
     <!-- Fin del Contenido -->
