@@ -37,6 +37,5 @@
               <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
         </section>
     <!-- Fin del Contenido -->
-    <?php get_template_part('/templates/searchgoogle'); ?>
     <?php get_template_part('/templates/form'); ?>
     <?php get_footer(); ?>

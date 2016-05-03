@@ -53,6 +53,7 @@
             </div>
             <?php get_template_part('/templates/nav-header'); ?>
             <!-- <?php get_template_part('/templates/searchform'); ?> -->
-            <?php get_template_part('/templates/searchformgoogle'); ?>
+            <!-- <?php get_template_part('/templates/searchformgoogle'); ?> -->
+            <?php get_template_part('/templates/searchgoogle'); ?>
         </nav>
     <!-- Fin de Barra de Navegaci&#243;n -->
