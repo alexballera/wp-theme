@@ -1,0 +1,21 @@
+form.search.search__google {
+    display: none;
+
+    @include respond-to(md) {
+        display: block;
+        width: 25%;
+        margin: 0;
+
+        & input[type="text"] {
+            width: 60%;
+        }
+
+        & input[type="submit"] {
+            background-color: $orange;
+            border: none;
+            &:hover{
+                background-color: $purple;
+            }
+        }
+    }
+}
