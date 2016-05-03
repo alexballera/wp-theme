@@ -22,8 +22,11 @@ form{
             vertical-align: middle;
             margin: 0;
             border: none;
-            padding-top: 7px;
-            padding-bottom: 7px;
+            // padding-top: 7px;
+            // padding-bottom: 7px;
+            width: 16px;
+            height: 16px;
+            background: $orange;
         }
         &[type="text"] {
             color: grey;
