@@ -1,4 +1,10 @@
 <?php
+/* Options Framework Theme */
+if ( ! function_exists( 'optionsframework_init' ) ) {
+ define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
+ require_once dirname( __FILE__ ) . '/inc/options-framework.php';
+}
+
 if ( ! isset( $content_width ) ) $content_width = 900;
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 825, 510, true );

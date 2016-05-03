@@ -27,6 +27,15 @@
                         wp_tag_cloud($valores);
                         ?>
                 </div>
+                <!-- Publicidad -->
+                <?php if ( of_get_option( 'image_ad_footer' ) ) { ?>
+                 <div class="widget">
+                   <a href="<?php echo of_get_option( 'link_ad_footer', 'no entry' ); ?>">
+                      <img src="<?php echo of_get_option( 'image_ad_footer' ); ?>" />
+                   </a>
+                 </div>
+               <?php } ?>
+               <!-- Fin de Publicidad -->
             </div>
             <div class="footer__contact">
               <div class="footer__social">

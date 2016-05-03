@@ -162,6 +162,8 @@ gulp.task('copy', () => {
     .pipe(gulp.dest(globs.dist))
   gulp.src(globs.src + '/isotope.pkgd.min.js')
     .pipe(gulp.dest(globs.scripts.dist))
+  gulp.src(globs.src + '/inc/**/*.*')
+    .pipe(gulp.dest(globs.dist + '/inc'))
 })
 
 // Reload
