@@ -4,16 +4,16 @@
 <?php global $post; $layout = get_post_meta(get_the_id(), 'layout', TRUE);
 if ($layout == 'Layout1') {
  if ( have_posts() ) : while ( have_posts() ) : the_post();
- $cliente = get_post_meta(get_the_id(), 'cliente', TRUE);
- $socios = get_post_meta(get_the_id(), 'socios', TRUE);
+ $titulo = get_post_meta(get_the_id(), 'titulo', TRUE);
  $descripcion = get_post_meta(get_the_id(), 'descripcion', TRUE);
+ $cliente = get_post_meta(get_the_id(), 'cliente', TRUE);
  ?>
     <div class="portfolio__one">
         <div class="portfolio__one--detalle">
             <?php the_post_thumbnail('thumb'); ?>
-            <?php echo '<p><div class="portfolio__titulo">Cliente: </div> '.$cliente;
-            echo '<br /><div class="portfolio__titulo">Socios: </div> '.$socios;
-            echo '<br /><div class="portfolio__titulo">Decripcion: </div> '.$descripcion.'</p>'?>
+            <?php echo '<p><div class="portfolio__titulo">Título: </div> '.$titulo;
+            echo '<br /><div class="portfolio__titulo">Descripción: </div> '.$descripcion;
+            echo '<br /><div class="portfolio__titulo">Cliente: </div> '.$cliente.'</p>'?>
         </div>
     <?php the_content(); ?>
     </div><!-- end of portfolioUno -->
@@ -39,18 +39,18 @@ if ($layout == 'Layout1') {
 </div>
 <?php } else if ($layout == 'Layout2') { ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
- $cliente = get_post_meta(get_the_id(), 'cliente', TRUE);
- $socios = get_post_meta(get_the_id(), 'socios', TRUE);
+ $titulo = get_post_meta(get_the_id(), 'titulo', TRUE);
  $descripcion = get_post_meta(get_the_id(), 'descripcion', TRUE);
+ $cliente = get_post_meta(get_the_id(), 'cliente', TRUE);
  ?>
  <div class="portfolio__two">
  <?php the_content(); ?>
  </div><!-- end of portfolioDos -->
  <div class="portfolio__two--sidebar">
  <div class="portfolio__two--detalle">
- <?php echo '<p><div class="portfolio__titulo">Cliente: </div> '.$cliente;
- echo '<br /><div class="portfolio__titulo">Socios: </div> '.$socios;
- echo '<br /><div class="portfolio__titulo">Decripcion: </div> '.$descripcion.'</p>'?>
+ <?php echo '<p><div class="portfolio__titulo">Título: </div> '.$titulo;
+ echo '<br /><div class="portfolio__titulo">Descripción: </div> '.$descripcion;
+ echo '<br /><div class="portfolio__titulo">Cliente: </div> '.$cliente.'</p>'?>
  </div>
  <?php the_post_thumbnail('layout2'); ?>
  </div>
