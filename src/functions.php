@@ -207,18 +207,18 @@ $meta_box = array(
                   'priority' => 'high',
                   'fields' => array(
                                     array(
-                                          'name' => 'Título',
+                                          'name' => 'T&#237;tulo',
                                           'desc' => 'Nombre del proyecto',
                                           'id' => 'titulo', //cliente
                                           'type' => 'text',
-                                          'std' => 'Título del proyecto...'
+                                          'std' => 'T&#237;tulo del proyecto...'
                                           ),
                                     array(
-                                          'name' => 'Descripción',
-                                          'desc' => 'Descripción del proyecto',
+                                          'name' => 'Descripci&#243;n',
+                                          'desc' => 'Descripci&#243;n del proyecto',
                                           'id' => 'descripcion', //socios
                                           'type' => 'text',
-                                          'std' => 'Descripción del proyecto...'
+                                          'std' => 'Descripci&#243;n del proyecto...'
                                           ),
                                     array(
                                           'name' => 'Cliente',
@@ -329,7 +329,7 @@ add_image_size( 'portfolio', 230,130, true );
 add_image_size( 'layout2', 340, 300, true);
 /*End of Portfolio*/
 
-/* Convertir la primera imágen en destacada */
+/* Convertir la primera im&#225;gen en destacada */
 function autoset_featured() {
     global $post;
     $already_has_thumb = has_post_thumbnail($post->ID);
@@ -348,5 +348,5 @@ add_action('draft_to_publish', 'autoset_featured');
 add_action('new_to_publish', 'autoset_featured');
 add_action('pending_to_publish', 'autoset_featured');
 add_action('future_to_publish', 'autoset_featured');
-/* Fin convertir la primera imágen en destacada */
+/* Fin convertir la primera im&#225;gen en destacada */
 ?>

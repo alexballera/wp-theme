@@ -11,7 +11,7 @@ function optionsframework_option_name() {
  * Defines an array of options that will be used to generate the settings page and be saved in the database.
  * When creating the 'id' fields, make sure to use all lowercase and no spaces.
  *
- * If you are making your theme translatable, you should replace 'theme-textdomain'
+ * If you are making your theme translatable, you should replace 'portfolio-one'
  * with the actual text domain for your theme.  Read more:
  * http://codex.wordpress.org/Function_Reference/load_theme_textdomain
  */
@@ -20,20 +20,20 @@ function optionsframework_options() {
 
 	// Test data
 	$test_array = array(
-		'one' => __( 'One', 'theme-textdomain' ),
-		'two' => __( 'Two', 'theme-textdomain' ),
-		'three' => __( 'Three', 'theme-textdomain' ),
-		'four' => __( 'Four', 'theme-textdomain' ),
-		'five' => __( 'Five', 'theme-textdomain' )
+		'one' => __( 'One', 'portfolio-one' ),
+		'two' => __( 'Two', 'portfolio-one' ),
+		'three' => __( 'Three', 'portfolio-one' ),
+		'four' => __( 'Four', 'portfolio-one' ),
+		'five' => __( 'Five', 'portfolio-one' )
 	);
 
 	// Multicheck Array
 	$multicheck_array = array(
-		'one' => __( 'French Toast', 'theme-textdomain' ),
-		'two' => __( 'Pancake', 'theme-textdomain' ),
-		'three' => __( 'Omelette', 'theme-textdomain' ),
-		'four' => __( 'Crepe', 'theme-textdomain' ),
-		'five' => __( 'Waffle', 'theme-textdomain' )
+		'one' => __( 'French Toast', 'portfolio-one' ),
+		'two' => __( 'Pancake', 'portfolio-one' ),
+		'three' => __( 'Omelette', 'portfolio-one' ),
+		'four' => __( 'Crepe', 'portfolio-one' ),
+		'five' => __( 'Waffle', 'portfolio-one' )
 	);
 
 	// Multicheck Defaults
@@ -94,36 +94,36 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
-		'name' => __( 'Basic Settings', 'theme-textdomain' ),
+		'name' => __( 'Basic Settings', 'portfolio-one' ),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-	 'name' => __('Publicidad', 'options_framework_theme'),
+	 'name' => __('Publicidad', 'portfolio-one'),
 	 'type' => 'heading');
 
 	$options[] = array(
-	 'name' => __('Link Ad Header', 'options_framework_theme'),
-	 'desc' => __('Link conteniendo http://...', 'options_framework_theme'),
+	 'name' => __('Link Ad Header', 'portfolio-one'),
+	 'desc' => __('Link conteniendo http://...', 'portfolio-one'),
 	 'id' => 'link_ad_header',
 	 'type' => 'text');
 
 	$options[] = array(
-	 'name' => __('Imagen Ad Header', 'options_framework_theme'),
-	 'desc' => __('400x60px', 'options_framework_theme'),
+	 'name' => __('Imagen Ad Header', 'portfolio-one'),
+	 'desc' => __('400x60px', 'portfolio-one'),
 	 'id' => 'image_ad_header',
 	 'type' => 'upload');
 
 	$options[] = array(
-	 'name' => __('Link Ad Footer', 'options_framework_theme'),
-	 'desc' => __('Link conteniendo http://...', 'options_framework_theme'),
+	 'name' => __('Link Ad Footer', 'portfolio-one'),
+	 'desc' => __('Link conteniendo http://...', 'portfolio-one'),
 	 'id' => 'link_ad_footer',
 	 'std' => 'Default',
 	 'type' => 'text');
 
 	$options[] = array(
-	 'name' => __('Imagen Ad Footer', 'options_framework_theme'),
-	 'desc' => __('281x100px', 'options_framework_theme'),
+	 'name' => __('Imagen Ad Footer', 'portfolio-one'),
+	 'desc' => __('281x100px', 'portfolio-one'),
 	 'id' => 'image_ad_footer',
 	 'type' => 'upload');
 
@@ -142,8 +142,8 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => __( 'Default Text Editor', 'theme-textdomain' ),
-		'desc' => sprintf( __( 'You can also pass settings to the editor.  Read more about wp_editor in <a href="%1$s" target="_blank">the WordPress codex</a>', 'theme-textdomain' ), 'http://codex.wordpress.org/Function_Reference/wp_editor' ),
+		'name' => __( 'Default Text Editor', 'portfolio-one' ),
+		'desc' => sprintf( __( 'You can also pass settings to the editor.  Read more about wp_editor in <a href="%1$s" target="_blank">the WordPress codex</a>', 'portfolio-one' ), 'http://codex.wordpress.org/Function_Reference/wp_editor' ),
 		'id' => 'example_editor',
 		'type' => 'editor',
 		'settings' => $wp_editor_settings

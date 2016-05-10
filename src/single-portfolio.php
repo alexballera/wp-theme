@@ -11,8 +11,8 @@ if ($layout == 'Layout1') {
     <div class="portfolio__one">
         <div class="portfolio__one--detalle">
             <?php the_post_thumbnail('thumb'); ?>
-            <?php echo '<p><div class="portfolio__titulo">Título: </div> '.$titulo;
-            echo '<br /><div class="portfolio__titulo">Descripción: </div> '.$descripcion;
+            <?php echo '<p><div class="portfolio__titulo">T&#237;tulo: </div> '.$titulo;
+            echo '<br /><div class="portfolio__titulo">Descripci&#243;n: </div> '.$descripcion;
             echo '<br /><div class="portfolio__titulo">Cliente: </div> '.$cliente.'</p>'?>
         </div>
     <?php the_content(); ?>
@@ -48,8 +48,8 @@ if ($layout == 'Layout1') {
  </div><!-- end of portfolioDos -->
  <div class="portfolio__two--sidebar">
  <div class="portfolio__two--detalle">
- <?php echo '<p><div class="portfolio__titulo">Título: </div> '.$titulo;
- echo '<br /><div class="portfolio__titulo">Descripción: </div> '.$descripcion;
+ <?php echo '<p><div class="portfolio__titulo">T&#237;tulo: </div> '.$titulo;
+ echo '<br /><div class="portfolio__titulo">Descripci&#243;n: </div> '.$descripcion;
  echo '<br /><div class="portfolio__titulo">Cliente: </div> '.$cliente.'</p>'?>
  </div>
  <?php the_post_thumbnail('layout2'); ?>
