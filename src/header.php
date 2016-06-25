@@ -33,6 +33,13 @@
       Para  mejorar la  experiencia..
     </p>
     <![endif]-->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-1689752734604820",
+        enable_page_level_ads: true
+      });
+    </script>
     <!-- Barra de Navegaci&#243;n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">
@@ -53,7 +60,6 @@
             </div>
             <?php get_template_part('/templates/nav-header'); ?>
             <!-- <?php get_template_part('/templates/searchform'); ?> -->
-            <!-- <?php get_template_part('/templates/searchformgoogle'); ?> -->
             <?php get_template_part('/templates/searchgoogle'); ?>
         </nav>
     <!-- Fin de Barra de Navegaci&#243;n -->

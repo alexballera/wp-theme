@@ -1,6 +1,10 @@
 #___gcse_0{
     width: 30%;
     height: 3rem !important;
+    display: none;
+    @include respond-to(md) {
+        display: block;
+    }
 }
 .gsc-control-cse.gsc-control-cse-es{
     background-color: transparent;

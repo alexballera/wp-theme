@@ -28,6 +28,7 @@
                         ?>
                 </div>
                 <!-- Publicidad -->
+                <?php get_template_part('/templates/adsense-footer'); ?>
                 <?php if ( of_get_option( 'image_ad_footer' ) ) { ?>
                  <div class="widget">
                    <a href="<?php echo of_get_option( 'link_ad_footer', 'no entry' ); ?>">
@@ -62,6 +63,8 @@
                 <li><a href="mailto:alex@alexballera.com"><i class="fa fa-envelope-o"></i></a></li>
                 </ul>
                   <a class="informacion__boton" href="<?php echo esc_url( __('http://alexballera.com/contactame.html', 'portfolio-one')); ?>" target="_blank"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
+                  <!-- Publicidad -->
+                <?php get_template_part('/templates/adsense-footer2'); ?>
                 <div class="footer__validation">
                   <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Falexballera.com%2F" target="_blank">
                     <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/W3C_HTML5_certified.png?w=65" alt="Valid HTML" title="Validate HTML5" />

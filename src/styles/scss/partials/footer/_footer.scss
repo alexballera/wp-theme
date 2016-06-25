@@ -221,6 +221,13 @@ $item: 3;
             }
         }
     }
+    &__adsense {
+        display: block;
+
+        @include respond-to(md) {
+            display: none;
+        }
+    }
 }
 
 @import "./legal";
