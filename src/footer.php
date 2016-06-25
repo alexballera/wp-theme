@@ -77,13 +77,6 @@
             </div>
         </footer>
     <!-- Fin de Footer -->
-    <!-- Adf.ly -->
-    <script type="text/javascript"> 
-        var adfly_id = 5184166; 
-        var popunder_frequency_delay = 0; 
-    </script> 
-    <script src="http://cdn.adf.ly/js/display.js"></script>
-    <!-- Fin Adf.ly -->
     <?php get_template_part('/templates/nav-footer'); ?>
     <?php wp_footer(); ?>
   </body>

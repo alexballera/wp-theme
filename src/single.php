@@ -7,6 +7,7 @@
               </picture>
         </header>
     <!-- Fin de Header -->
+    <?php get_template_part('/templates/adsense-webdev'); ?>
     <!-- Contenido -->
         <section class="content">
               <!-- Servicios, Proyectos & Art&#237;culos -->
@@ -37,5 +38,6 @@
               <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
         </section>
     <!-- Fin del Contenido -->
+    <?php get_template_part('/templates/adsense-webdev'); ?>
     <?php get_template_part('/templates/form'); ?>
     <?php get_footer(); ?>
