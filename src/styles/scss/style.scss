@@ -14,15 +14,10 @@
  This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import './vendors/normalize',
-'./vendors/reset',
-'../fonts/src/font-awesome',
-'../fonts/scss/font-awesome',
-'../fonts/src/font-mfizz',
-'./vendors/prism',
-'./customs/customs',
-'./partials/navbar/navbar',
-'./partials/content/content',
-'./partials/form/form',
-'./partials/footer/footer',
-'./partials/sidebar/sidebar';
+
+@import 'vendors/**/*';
+@import 'utils/**/*';
+@import '../fonts/src/**/*';
+@import '../fonts/scss/font-awesome';
+@import 'customs/**/*';
+@import 'components/**/*';
