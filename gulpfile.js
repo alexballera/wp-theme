@@ -35,16 +35,16 @@ const globs = {
     dist: './dist/css'
   },
   scripts: {
-    main: './src/scripts/main.js',
-    watch: './src/scripts/main.js',
-    src: './src/scripts',
+    main: './src/js/main.js',
+    watch: './src/js/main.js',
+    src: './src/js',
     dist: './dist/js'
   },
   images: {
     main: './src/images/**',
     watch: './src/images/**/*.*',
     src: './src/images',
-    dist: './dist/img'
+    dist: './dist/images'
   },
   videos: {
     main: './src/videos/**',
@@ -79,19 +79,13 @@ gulp.task('serve', () => {
 gulp.task('build:php', () => {
   gulp.src(globs.php.watch)
     .pipe(gulp.dest(globs.dist))
-  gulp.src(globs.src + '/index.php')
-    .pipe(rename('front-page.php'))
-    .pipe(gulp.dest(globs.dist))
 })
-
 // Styles: Compila SASS ~> CSS
 gulp.task('build:styles', () => {
   return gulp.src(globs.styles.main)
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(globs.dist))
-    .pipe(rename('editor-style.css'))
-    .pipe(gulp.dest(globs.styles.dist))
 })
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
@@ -158,12 +152,14 @@ gulp.task('copy', () => {
     .pipe(gulp.dest(globs.fonts.dist + '/fontawesome')) // Comentar si se va a usar el cdnjs
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.dist))
-  gulp.src(globs.src + '/readme.txt')
-    .pipe(gulp.dest(globs.dist))
-  gulp.src(globs.src + '/isotope.pkgd.min.js')
-    .pipe(gulp.dest(globs.scripts.dist))
-  gulp.src(globs.src + '/inc/**/*.*')
-    .pipe(gulp.dest(globs.dist + '/inc'))
+  gulp.src(globs.scripts.src + '/vendors/**/*.*')
+    .pipe(gulp.dest(globs.scripts.dist + '/vendors'))
+  gulp.src(globs.styles.src + '/flexslider.css')
+    .pipe(gulp.dest(globs.styles.dist))
+  gulp.src(globs.fonts.src + '/fonts-flexslides/**/*.*')
+    .pipe(gulp.dest(globs.styles.dist + '/fonts'))
+  gulp.src(globs.src + '/login/**/*.*')
+    .pipe(gulp.dest(globs.dist + '/login'))
 })
 
 // Reload

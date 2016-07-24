@@ -349,4 +349,17 @@ add_action('new_to_publish', 'autoset_featured');
 add_action('pending_to_publish', 'autoset_featured');
 add_action('future_to_publish', 'autoset_featured');
 /* Fin convertir la primera im&#225;gen en destacada */
+
+/* Enque Stylesheet */
+function my_custom_login() {
+  echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
+}
+add_action('login_head', 'my_custom_login');
+
+// function personalizar_login() {
+//     echo '<style type="text/css">
+//           h1 a { background-image:url('.get_bloginfo('template_directory').'/login/login-logo.jpg) !important; }
+//     </style>';
+// }
+// add_action('login_head', 'personalizar_login')
 ?>
