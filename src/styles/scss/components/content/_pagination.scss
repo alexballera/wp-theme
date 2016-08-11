@@ -1,56 +1,57 @@
-.wp-pagenavi span.pages,
- .wp-pagenavi a.page,
- .wp-pagenavi .page-numbers,
- .wp-pagenavi span.extend,
- .wp-pagenavi a.first,
- .wp-pagenavi a.nextpostslink,
- .wp-pagenavi a.previouspostslink,
- .wp-pagenavi a.last {
- padding:5px;
- height:20px;
- margin-right:5px;
- background: #7ec5ff;
- color:white;
- border:1px solid #5995c6;
- text-decoration:none;
- border-radius: 3px;
- -moz-border-radius: 3px;
- -webkit-border-radius: 3px;
- display:block;
- float:left;
- }
- .wp-pagenavi span.current,
- .wp-pagenavi a:hover {
- padding:5px;
- height:20px;
- margin-right:5px;
- background:#fff;
- color:#7ec5ff;
- border:1px solid #5995c6;
- text-decoration:none;
- border-radius: 3px;
- -moz-border-radius: 3px;
- -webkit-border-radius: 3px;
- display:block;
- float:left;
- }
- .wp-pagenavi a.next,
- .wp-pagenavi a.prev {
- padding-top:1px 0;
- height:20px;
- margin-right:5px;
- background: #7ec5ff;
- color:white;
- border:1px solid #5995c6;
- text-decoration:none;
- border-radius: 3px;
- -moz-border-radius: 3px;
- -webkit-border-radius: 3px;
- display:block;
- float:left;
- }
- .wp-pagenavi img {
- height:20px;
- width:25px;
- margin-top:0px;
- }
+.navigation{
+	width: 100%;
+	padding-left: 1rem;
+}
+
+.wp-pagenavi{
+	& span.pages,
+	& a.page,
+	& .page-numbers,
+	& span.extend,
+	& a.first,
+	& a.nextpostslink,
+	& a.previouspostslink,
+	& a.last {
+		padding:5px;
+		height:20px;
+		margin-right:5px;
+		background: $orange;
+		color:white;
+		border:1px solid $orange;
+		text-decoration:none;
+		border-radius: 3px;
+		display:block;
+		float:left;
+	}
+	& span.current,
+	& a:hover {
+		padding:5px;
+		height:20px;
+		margin-right:5px;
+		background:$purple;
+		color:#7ec5ff;
+		border:1px solid $purple;
+		text-decoration:none;
+		border-radius: 3px;
+		display:block;
+		float:left;
+	}
+	& a.next,
+	& a.prev {
+		padding-top:1px 0;
+		height:20px;
+		margin-right:5px;
+		background: $orange;
+		color:white;
+		border:1px solid $orange;
+		text-decoration:none;
+		border-radius: 3px;
+		display:block;
+		float:left;
+	}
+	& i img {
+		height:20px;
+		width:25px;
+		margin-top:0px;
+	}
+}

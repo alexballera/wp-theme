@@ -18,7 +18,7 @@
   </div>
   <?php endwhile; ?>
   <?php wp_link_pages(); ?>
-  <?php the_posts_pagination(); ?>
+  <!-- <?php the_posts_pagination(); ?> -->
   <div class="navigation"><?php wp_pagenavi(); ?></div>
   <?php endif; ?>
 </div>
