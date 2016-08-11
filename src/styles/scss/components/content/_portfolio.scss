@@ -17,7 +17,6 @@
     &__one {
         width: 670px;
         float: left;
-        @import './wp-content';
 
         &--detalle {
             width: 650px;
@@ -39,7 +38,6 @@
     &__two {
         width: 560px;
         float: left;
-        @import './wp-content';
 
         &--detalle {
             width: 320px;
@@ -61,9 +59,6 @@
         }
     }
 
-    &__three{
-      @import './wp-content';
-    }
 
     &__sidebar {
         width: 230px;
@@ -99,4 +94,3 @@
         }
     }
 }
-@import './portfolio-taxonomy';

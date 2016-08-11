@@ -4,6 +4,7 @@
 
     &__container--purple {
         background-color: $purpleLight;
+        height: 390px;
     }
 
     &__content {
@@ -29,18 +30,19 @@
     &__email {
         display: flex;
         flex: 0 1;
-        flex-direction: row;
+        flex-flow: row wrap;
         flex-wrap: wrap;
         justify-content: center;
 
-        & input[type="text"] {
-            position: relative;
+        & input[type="email"] {
+            top: 15px;
         }
 
         & input[type="email"],
         & input[type="text"] {
+            position: relative;
             border-radius: 6px;
-            padding: 0.5rem;
+                padding: 1rem 0 1rem 1rem;
             width: 100%;
             line-height: 40px;
             height: 100%;
@@ -48,17 +50,17 @@
             font-size: 1.1rem;
 
             @include respond-to(md) {
-                width: 80%;
+                width: 80% !important;
             }
 
 
             @include respond-to(lg) {
-                width: 75%;
+                width: 75% !important;
             }
 
 
             @include respond-to(xl) {
-                width: 85%;
+                width: 85% !important;
             }
         }
 
@@ -72,6 +74,8 @@
             background-color: $orange;
             outline: none;
             border: none;
+            top: 25px;
+            position: relative;
 
             @include respond-to(sm) {
                 margin-bottom: 0;

@@ -1,6 +1,7 @@
 form.search-form {
     margin: 0 auto;
     text-align: center;
+    width: 100% !important;
 
     & label input[type="search"] {
         box-sizing: border-box;
