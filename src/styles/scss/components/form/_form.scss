@@ -33,6 +33,10 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        & input[type="text"] {
+            position: relative;
+        }
+
         & input[type="email"],
         & input[type="text"] {
             border-radius: 6px;
@@ -94,5 +98,3 @@
         }
     }
 }
-
-@import './mailchimp';
