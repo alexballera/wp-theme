@@ -28,14 +28,6 @@
               </section>
         </header>
     <!-- Fin de Header -->
-    <!-- Publicidad -->
-      <?php if ( of_get_option( 'image_ad_header' ) ) { ?>
-       <div class="adHeader">
-         <a href="<?php echo of_get_option( 'link_ad_header', 'no entry' ); ?>">
-            <img src="<?php echo of_get_option( 'image_ad_header' ); ?>" />
-         </a>
-       </div>
-     <?php } ?>
     <!-- Contenido -->
         <section class="content">
             <div class="container">
