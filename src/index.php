@@ -3,12 +3,12 @@
         <header class="header">
               <picture class="header__picture">
                   <source
-                    srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300,
-                    http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=600 2x" type="image/jpg">
+                    srcset="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/08/alexballera300x300.jpg?w=300,
+                    http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/08/alexballera300x300.jpg?w=600 2x" type="image/jpg">
                     <img
-                    src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300"
-                    srcset="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=300,
-                    http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/02/alex-ballera.jpg?w=600 2x"
+                    src="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/08/alexballera300x300.jpg?w=300"
+                    srcset="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/08/alexballera300x300.jpg?w=300,
+                    http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/08/alexballera300x300.jpg?w=600 2x"
                     alt="Alex Ballera">
               </picture>
               <section class="header__languages">

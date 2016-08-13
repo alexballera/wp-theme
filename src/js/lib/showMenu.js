@@ -9,6 +9,7 @@ var showMenu = () => {
     btnMenu.classList.toggle('inactive')
     btnButton.classList.toggle('fa-bars')
     btnButton.classList.toggle('fa-times')
+    alert('Click en boton')
   }
 }
 module.exports = showMenu

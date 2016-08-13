@@ -7,39 +7,33 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
     <!-- Mobile Optimization -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <?php get_template_part( 'templates/mobileoptimization'); ?>
+    <!-- End Mobile Oimization -->
 
-    <!-- Images Icon -->
-    <link rel="shortcut icon" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone.png?w=57" />
-    <link rel="apple-touch-icon" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone.png?w=57" />
-    <link rel="apple-touch-icon" sizes="72x72" href="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad.png?w=72" />
-    <link rel="apple-touch-icon" sizes="114x114" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone-retina.png?w=114" />
-    <link rel="apple-touch-icon" sizes="152x152" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad-retina.png?w=152">
+    <!-- Favicon: http://www.favicon-generator.org/ -->
+    <?php get_template_part( 'templates/favicon'); ?>
+    <!-- End Favicon -->
 
-    <!--[if (gte IE 6)&(lte IE 8)]>
-    <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.min.js"></script>
-    <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
-    <![endif]-->
+    <!-- Selectivizr -->
+    <?php get_template_part( 'templates/selectivizr'); ?>
+    <!-- End Selectivizr -->
+
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+
+  <!-- Injection wp_head -->
   <?php wp_head(); ?>
+  <!-- End injection wp_head -->
   </head>
   <body <?php body_class('body'); ?>>
-    <!--[if lt  IE  8]>
-    <p  class="browsehappy">
-      Est&#225;s usando  un  navegador <strong>desactualizado</strong>.
-      Por favor <a  href="http://browsehappy.com/">actualiza  tu  navegador</a>
-      Para  mejorar la  experiencia..
-    </p>
-    <![endif]-->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-1689752734604820",
-        enable_page_level_ads: true
-      });
-    </script>
+
+    <!-- Browsehappy -->
+    <?php get_template_part( 'templates/browsehappy'); ?>
+    <!-- End Browsehappy -->
+
+    <!-- Ads By Google -->
+    <?php get_template_part( 'templates/addsbygoogle'); ?>
+    <!-- End AdsByGoogle -->
+
     <!-- Barra de Navegaci&#243;n -->
         <nav id="header" class="nav">
             <div class="nav__mobile">

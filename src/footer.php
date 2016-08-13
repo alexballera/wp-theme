@@ -71,6 +71,8 @@
         </footer>
     <!-- Fin de Footer -->
     <?php get_template_part('/templates/nav-footer'); ?>
+    <!-- Inicio de wp_footer -->
     <?php wp_footer(); ?>
+    <!-- Fin de wp_footer -->
   </body>
 </html>

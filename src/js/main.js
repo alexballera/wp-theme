@@ -13,6 +13,11 @@ import loadJS from './lib/loadJS'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
+    modernizr()
+    selectivizr()
+    retinajs()
+    prism()
+    doTransparentBar()
 // Variables Globales
     var btnMenu = document.getElementById('btnMenu')
     var btnButton = document.getElementById('btnButton')
