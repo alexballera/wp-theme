@@ -1,0 +1,142 @@
+/* Cambiar el Background */
+body.login{
+  background-image: url('bg-logo.jpg') !important;
+  background-repeat: repeat;
+  height: 600px;
+  /* background-image: url('bg-logo-cover.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover; */
+}
+
+/* Reemplazar Logo */
+
+.login h1 {
+    text-align: center;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 10px 0px #636262;
+    -moz-box-shadow: 10px 10px 10px 0px #636262;
+    box-shadow: 10px 10px 10px 0px #636262;
+}
+.login h1 a {
+  background-image: url('login-logo.jpg');
+  background-position: center;
+  background-size: 150px; /*Modificar aquí para que coincida con el tamaño del logo */
+  height: 160px; /*Modificar aquí para que coincida con el tamaño del logo */
+  width: 300px; /*Modificar aquí para que coincida con el tamaño del logo */
+}
+
+/* Fomato Caja login BOF*/
+body.login div#login form#loginform {
+  background: #004170;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px 0px #636262;
+  -moz-box-shadow: 10px 10px 10px 0px #636262;
+  box-shadow: 10px 10px 10px 0px #636262;
+}
+
+/* Fomato Caja Registro BOF*/
+body.login div#login form#registerform {
+  background: #004170;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px 0px #636262;
+  -moz-box-shadow: 10px 10px 10px 0px #636262;
+  box-shadow: 10px 10px 10px 0px #636262;
+}
+
+/* Fomato Caja Lost Password BOF*/
+body.login div#login form#lostpasswordform {
+  background: #004170;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px 0px #636262;
+  -moz-box-shadow: 10px 10px 10px 0px #636262;
+  box-shadow: 10px 10px 10px 0px #636262;
+}
+
+/* Fomato texto etiquetas dentro de la caja BOF*/
+.login label {
+  color: #dddddd;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Fomato caja input BOF*/
+.login form .input, .login input[type=text], .login form input[type=checkbox] {
+  background: #dddddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 0px #636262;
+  -moz-box-shadow: 2px 2px 2px 0px #636262;
+  box-shadow: 2px 2px 2px 0px #636262;
+}
+
+/* Fomato texto tiquetas fuera de la caja BOF*/
+.login #nav a, .login #backtoblog a {
+  text-decoration: none;
+  color: #004170;
+  font-weight: bold;
+}
+
+.login #nav a:hover, .login #backtoblog a:hover {
+  color: #00416f;
+  font-weight: bold;
+}
+
+/* Formato caja mensajes BOF*/
+div.updated, .login .message, .press-this #message,
+div.error, .login #login_error {
+  background: #0083CD;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px 0px #636262;
+  -moz-box-shadow: 10px 10px 10px 0px #636262;
+  box-shadow: 10px 10px 10px 0px #636262;
+  border-left: 4px solid #004170;
+}
+
+/* Formato texto mensajes*/
+p, .wp_attachment_details label[for=content] {
+  color: #dddddd;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+/* Botón de acceso */
+.wp-core-ui .button.button-large{
+  background-color: #EC6D4F !important;
+  border-color: #EC6D4F !important;
+  text-shadow: none !important;
+}
+.wp-core-ui .button.button-large:hover{
+  background-color: #c44530 !important;
+  border-color: #c44530 !important;
+}
+
+/* Eliminar el enlace de password olvidado */
+p#nav {
+  display: none;
+}
+
+/* Eliminar el enlace de volver a la Home */
+p#backtoblog {
+  display: none;
+}
+
+/* Acceso con Jetpack*/
+#jetpack-sso-wrap__user h2{
+  color: white;
+}

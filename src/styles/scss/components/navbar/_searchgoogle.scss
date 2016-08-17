@@ -36,9 +36,12 @@ form{
             color: grey;
             height: 1rem;
             position: absolute;
-            width: 17% !important;
+            width: 6% !important;
             padding-right: 0 !important;
             top: 16px;
+            @include respond-to(lg) {
+                width: 17% !important;
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ function insertStyle() {
 add_action( 'wp_enqueue_scripts', 'insertStyle' );
 
 function my_custom_login() {
-  echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
+  echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login.css" />';
 }
 add_action('login_head', 'my_custom_login');
 
