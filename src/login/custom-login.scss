@@ -1,78 +1,78 @@
 body.login{
-      /* Cambiar el Background */
-  /* background-image: url('bg-logo.jpg') !important;
-  background-repeat: repeat;
-  height: 600px; */
-  background-image: url('bg-logo-cover.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-  background-size: cover;
-    /* Reemplazar Logo */
-    & h1 {
-        text-align: center;
-    /*     background-color: rgba(255,255,255,.4);
-        border-radius: 10px;
-        box-shadow: 10px 10px 10px 0px #636262; */
-      & a {
-        background-image: url('logo-login.jpg');
-        background-position: center;
-        background-size: 200px; /*Modificar aquí para que coincida con el tamaño del logo */
-        height: 250px; /*Modificar aquí para que coincida con el tamaño del logo */
-        width: 300px; /*Modificar aquí para que coincida con el tamaño del logo */
-      }
-    }
-  & div#login {
-    >h1>a:hover {
-      box-shadow: 0 0 0 1px transparent,0 0 2px 1px transparent !important;
-    }
-    & form{
-      /* Fomato Caja login BOF*/
-        &#loginform {
-        background: #004170;
-        border-radius: 10px;
-        box-shadow: 10px 10px 10px 0px #636262;
-      }
-      /* Fomato Caja Registro BOF*/
-      &#registerform {
-        background: #004170;
-        border-radius: 10px;
-        box-shadow: 10px 10px 10px 0px #636262;
-      }
-      /* Fomato Caja Lost Password BOF*/
-      &#lostpasswordform {
-        background: #004170;
-        border-radius: 10px;
-        box-shadow: 10px 10px 10px 0px #636262;
-      }
-    }
-  }
-  /* Fomato texto etiquetas dentro de la caja BOF*/
-  & label {
-    color: #dddddd;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  /* Fomato caja input BOF*/
-  & form .input,
-  & input[type=text],
-  & form input[type=checkbox] {
-    background: #dddddd;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 0px #636262;
-  }
-  /* Fomato texto tiquetas fuera de la caja BOF*/
-  & #nav a,
-  & #backtoblog a {
-    text-decoration: none;
-    color: #004170;
-    font-weight: bold;
-  }
-  & #nav a:hover,
-  & #backtoblog a:hover {
-    color: #00416f;
-    font-weight: bold;
-  }
+	/* Cambiar el Background */
+	/* background-image: url('bg-logo.jpg') !important;
+	background-repeat: repeat;
+	height: 600px; */
+	background-image: url('bg-logo-cover.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: cover;
+		/* Reemplazar Logo */
+		& h1 {
+				text-align: center;
+		/*     background-color: rgba(255,255,255,.4);
+				border-radius: 10px;
+				box-shadow: 10px 10px 10px 0px #636262; */
+			& a {
+				background-image: url('logo-login.jpg');
+				background-position: center;
+				background-size: 200px; /*Modificar aquí para que coincida con el tamaño del logo */
+				height: 250px; /*Modificar aquí para que coincida con el tamaño del logo */
+				width: 300px; /*Modificar aquí para que coincida con el tamaño del logo */
+			}
+		}
+	& div#login {
+		>h1>a:hover {
+			box-shadow: 0 0 0 1px transparent,0 0 2px 1px transparent !important;
+		}
+		& form{
+			/* Fomato Caja login BOF*/
+				&#loginform {
+				background: #004170;
+				border-radius: 10px;
+				box-shadow: 10px 10px 10px 0px #636262;
+			}
+			/* Fomato Caja Registro BOF*/
+			&#registerform {
+				background: #004170;
+				border-radius: 10px;
+				box-shadow: 10px 10px 10px 0px #636262;
+			}
+			/* Fomato Caja Lost Password BOF*/
+			&#lostpasswordform {
+				background: #004170;
+				border-radius: 10px;
+				box-shadow: 10px 10px 10px 0px #636262;
+			}
+		}
+	}
+	/* Fomato texto etiquetas dentro de la caja BOF*/
+	& label {
+		color: #dddddd;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	/* Fomato caja input BOF*/
+	& form .input,
+	& input[type=text],
+	& form input[type=checkbox] {
+		background: #dddddd;
+		border-radius: 5px;
+		box-shadow: 2px 2px 2px 0px #636262;
+	}
+	/* Fomato texto tiquetas fuera de la caja BOF*/
+	& #nav a,
+	& #backtoblog a {
+		text-decoration: none;
+		color: #004170;
+		font-weight: bold;
+	}
+	& #nav a:hover,
+	& #backtoblog a:hover {
+		color: #00416f;
+		font-weight: bold;
+	}
 }
 
 /* Formato caja mensajes BOF*/
@@ -81,47 +81,47 @@ div.updated,
 .press-this #message,
 div.error,
 .login #login_error {
-  background: #0083CD;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px 0px #636262;
-  border-left: 4px solid #004170;
+	background: #0083CD;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 0px #636262;
+	border-left: 4px solid #004170;
 }
 
 /* Formato texto mensajes*/
 p,
 .wp_attachment_details label[for=content] {
-  color: #dddddd;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.5;
-  margin: 1em 0;
+	color: #dddddd;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 1em 0;
 }
 
 /* Botón de acceso */
 .wp-core-ui .button.button-large{
-  background-color: #EC6D4F !important;
-  border-color: #EC6D4F !important;
-  text-shadow: none !important;
+	background-color: #EC6D4F !important;
+	border-color: #EC6D4F !important;
+	text-shadow: none !important;
 }
 .wp-core-ui .button.button-large:hover{
-  background-color: #c44530 !important;
-  border-color: #c44530 !important;
+	background-color: #c44530 !important;
+	border-color: #c44530 !important;
 }
 
 /* Eliminar el enlace de password olvidado */
 p#nav {
-  display: none;
+	display: none;
 }
 
 /* Eliminar el enlace de volver a la Home */
 p#backtoblog {
-  display: none;
+	display: none;
 }
 
 /* Acceso con Jetpack*/
 #jetpack-sso-wrap__user h2,
 #loginform #jetpack-sso-wrap p{
-  color: white;
+	color: white;
 }

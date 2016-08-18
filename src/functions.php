@@ -26,5 +26,7 @@ require 'inc/add-image.php';
 // Add Custom Login
 require 'inc/custom-login.php';
 
+// Minify HTML JS CSS
+require 'inc/minifier-script.php';
 
 ?>

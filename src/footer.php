@@ -23,7 +23,8 @@
                           'number' => 0,
                           'format' => 'flat',
                           'orderby' => 'name',
-                          'order' => 'ASC');
+                          'order' => 'ASC',
+                          'separator' => ' ');
                         wp_tag_cloud($valores);
                         ?>
                 </div>
