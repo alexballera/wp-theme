@@ -21,7 +21,7 @@ require 'inc/add-breadcumbs.php';
 require 'inc/add-portfolio.php';
 
 // Add Image
-require 'inc/add-image.php';
+// require 'inc/add-image.php';
 
 // Add Custom Login
 require 'inc/custom-login.php';
