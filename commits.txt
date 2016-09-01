@@ -1,3 +1,9 @@
+commit 3d90b5d37490550b77d072168f5e8c1cc664c586
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Thu Sep 1 13:25:00 2016 -0400
+
+    Eliminado imagen destacada
+
 commit 018b0ce0711b9441ac9833d85a930fbff3e92b92
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Thu Sep 1 12:12:29 2016 -0400
