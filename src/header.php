@@ -38,7 +38,7 @@
     <!-- End Browsehappy -->
 
     <!-- Ads By Google -->
-    <?php get_template_part( 'templates/addsbygoogle'); ?>
+    <?php get_template_part( 'templates/adsbygoogle'); ?>
     <!-- End AdsByGoogle -->
 
     <!-- Barra de Navegaci&#243;n -->

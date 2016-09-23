@@ -1,0 +1,2 @@
+<a href="http://www.jdoqocy.com/click-8149779-10833186-1473276016000" target="_blank">
+<img src="http://www.tqlkg.com/image-8149779-10833186-1473276016000" width="728" height="90" alt="$1*/ mo hosting! Get going with GoDaddy!" border="0"/></a>
