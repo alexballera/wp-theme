@@ -31,19 +31,19 @@ body.login{
 				&#loginform {
 				background: #004170;
 				border-radius: 10px;
-				box-shadow: 10px 10px 10px 0px #636262;
+				// box-shadow: 10px 10px 10px 0px #636262;
 			}
 			/* Fomato Caja Registro BOF*/
 			&#registerform {
 				background: #004170;
 				border-radius: 10px;
-				box-shadow: 10px 10px 10px 0px #636262;
+				// box-shadow: 10px 10px 10px 0px #636262;
 			}
 			/* Fomato Caja Lost Password BOF*/
 			&#lostpasswordform {
 				background: #004170;
 				border-radius: 10px;
-				box-shadow: 10px 10px 10px 0px #636262;
+				// box-shadow: 10px 10px 10px 0px #636262;
 			}
 		}
 	}
@@ -59,7 +59,7 @@ body.login{
 	& form input[type=checkbox] {
 		background: #dddddd;
 		border-radius: 5px;
-		box-shadow: 2px 2px 2px 0px #636262;
+		// box-shadow: 2px 2px 2px 0px #636262;
 	}
 	/* Fomato texto tiquetas fuera de la caja BOF*/
 	& #nav a,
@@ -85,8 +85,8 @@ div.error,
 	color: #ffffff;
 	font-weight: bold;
 	border-radius: 10px;
-	box-shadow: 10px 10px 10px 0px #636262;
 	border-left: 4px solid #004170;
+	// box-shadow: 10px 10px 10px 0px #636262;
 }
 
 /* Formato texto mensajes*/
