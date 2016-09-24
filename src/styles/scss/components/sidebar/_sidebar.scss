@@ -58,6 +58,25 @@
             }
         }
 
+        >table{
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: grey;
+            background-color: white;
+            >caption{
+                text-transform: capitalize;
+                margin: 1rem 0;
+                @extend .sidebar-title
+            }
+            a{
+                color: $orange;
+            }
+            td,
+            th{
+                padding: 0.45rem;
+            }
+        }
+
 
 
         & ul {

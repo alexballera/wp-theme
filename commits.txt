@@ -1,3 +1,9 @@
+commit 9f2f43b9b83df21cacad429b95de6f502d845438
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Sep 24 13:43:14 2016 -0400
+
+    Mejorando sidebar
+
 commit 2f6376df7c7a0d07906cae54677e112052cab036
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Sat Sep 24 13:02:41 2016 -0400

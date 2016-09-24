@@ -92,6 +92,10 @@
       <img src="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/09/ipage-image-8149779-11577048-1474577037000.gif" width="250" height="208" alt="IPage" border="0"/></a>
   </article>
 
+  <article class="sidebar__content">
+      <?php get_calendar(); ?> 
+  </article>
+
 
 
 </section><!-- end of sidebar -->
