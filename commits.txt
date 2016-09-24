@@ -1,3 +1,9 @@
+commit 92c4e27d8999468484b95dcae91742db47b49830
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Sep 24 16:03:19 2016 -0400
+
+    Agregado calendario
+
 commit 9f2f43b9b83df21cacad429b95de6f502d845438
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Sat Sep 24 13:43:14 2016 -0400

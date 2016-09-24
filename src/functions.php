@@ -26,7 +26,25 @@ require 'inc/add-portfolio.php';
 // Add Custom Login
 require 'inc/custom-login.php';
 
+// Custom Email WP
+require 'inc/add-email.php';
+
+// Add nofollow to links
+require 'inc/add-nofollow.php';
+
 // Minify HTML JS CSS
 require 'inc/minifier-script.php';
+
+// Eliminar meta tag generator = version WordPress y Versión de Tema
+require 'inc/change-wp-head.php';
+
+// MODO PRODUCCIÓN
+require 'inc/autoupdate.php';
+
+// Restringir Login
+require 'inc/restringir-login.php';
+
+// Hide Admin Bar
+require 'inc/hide-admin-bar.php';
 
 ?>
