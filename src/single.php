@@ -31,7 +31,7 @@
                                   <?php endif; ?>
                                   </div>
                                </div>
-                              <?php get_sidebar(); ?>
+                              <?php get_sidebar('single'); ?>
                             </div>
                           </article>
                     <!-- Fin de Art&#237;culos -->

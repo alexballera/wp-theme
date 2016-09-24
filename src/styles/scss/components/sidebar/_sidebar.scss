@@ -1,3 +1,10 @@
+.sidebar-title{
+    margin-bottom: 2rem;
+    color: grey;
+    text-align: left;
+    background-color: $black;
+    padding: 1rem;
+}
 .sidebar {
     background-color: $background;
     width: 100%;
@@ -17,7 +24,6 @@
         display: block;
     }
 
-
     &__content {
         padding: 1rem;
         box-sizing: border-box;
@@ -34,14 +40,25 @@
             box-sizing: border-box;
         }
 
-
-        & h3 {
-            margin-bottom: 2rem;
-            color: grey;
-            text-align: left;
-            background-color: $black;
-            padding: 1rem;
+        >h3 {
+            @extend .sidebar-title
         }
+
+        >a{
+            color: grey;
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        >li.categories{
+            list-style-type: none;
+            &>h3 {
+                @extend .sidebar-title
+            }
+        }
+
+
 
         & ul {
             background-color: white;

@@ -6,7 +6,7 @@
                     <?php wp_list_categories( array(
                         'orderby' => 'count',
                         'order' => 'DESC',
-                        'title_li:' => false,
+                        'title_li:' => '',
                         'show_count' => true
                     ) ); ?>
                 </div>
@@ -14,7 +14,7 @@
             </div>
             <div id="lastArticles" class="footer__content footer__articles">
               <div class="footer__content--tags tags" id="tags">
-                    <h3></i> Etiquetas</h3>
+                    <h3> Etiquetas</h3>
                     <?php
                         $valores = array(
                           'smallest' => 10,
