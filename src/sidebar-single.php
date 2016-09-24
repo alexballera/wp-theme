@@ -9,17 +9,17 @@
 
   <article class="sidebar__content">
       <a href="http://www.kqzyfj.com/click-8149779-10864024-1473276044000" target="_blank">
-        <img src="http://www.tqlkg.com/image-8149779-10864024-1473276044000" width="250" height="250" alt="$1*/ mo hosting! Get going with GoDaddy!" border="0"/>
+        <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/09/image-8149779-10864024-1473276044000.gif" width="250" height="250" alt="$1*/ mo hosting! Get going with GoDaddy!" border="0"/>
       </a>
   </article>
 
   <article class="sidebar__content">
       <a href="http://www.jdoqocy.com/click-8149779-12248819-1439571430000" target="_blank">
-      <img src="http://www.awltovhc.com/image-8149779-12248819-1439571430000" width="250" height="250" alt="IPage" border="0"/></a>
+      <img src="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/09/image-8149779-12248819-1439571430000.png" width="250" height="250" alt="IPage" border="0"/></a>
   </article>
 
   <article class="sidebar__content">
-    <a href="https:&#x2F;&#x2F;www.namecheap.com&#x2F;?aff=68624"><img src="http:&#x2F;&#x2F;files.namecheap.com&#x2F;graphics&#x2F;linkus&#x2F;200x200-5.gif" width="250" height="208" border="0" alt="Namecheap.com"></a>
+    <a href="https:&#x2F;&#x2F;www.namecheap.com&#x2F;?aff=68624" target="_blank"><img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/09/namecheap200x200-5.gif?__hstc=190255348.34838f21d63e8f343cb9eedbc685e4b6.1472762432338.1474734509109.1474736682697.6&__hssc=190255348.7.1474736682697&__hsfp=3125025851" width="250" height="208" border="0" alt="Namecheap.com"></a>
   </article>
 
 
@@ -47,12 +47,12 @@
 
   <article class="sidebar_content">
       <a href="http://www.tkqlhce.com/click-8149779-10730841-1473273872000" target="_blank">
-    <img src="http://www.awltovhc.com/image-8149779-10730841-1473273872000" width="250" height="250" alt="$.99* .COM Domain! Get going with GoDaddy!" border="0"/></a>
+    <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/09/godaddy-image-8149779-10730841-1473273872000.gif" width="250" height="250" alt="$.99* .COM Domain! Get going with GoDaddy!" border="0"/></a>
   </article>
 
   <article class="sidebar__content">
     <a href="http://www.kqzyfj.com/click-8149779-12085996-1439571530000" target="_blank">
-  <img src="http://www.ftjcfx.com/image-8149779-12085996-1439571530000" width="250" height="208" alt="iPage site builder banner" border="0"/></a>
+  <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/09/ipage-image-8149779-12085996-1439571530000.png" width="250" height="208" alt="iPage site builder banner" border="0"/></a>
   </article>
 
   <article class="sidebar__content">
@@ -84,12 +84,12 @@
   </article>
 
   <article class="sidebar__content">
-    <a href="https:&#x2F;&#x2F;www.namecheap.com&#x2F;?aff=68624"><img src="http:&#x2F;&#x2F;files.namecheap.com&#x2F;graphics&#x2F;linkus&#x2F;300x250-2.gif" width="250" height="208" border="0" alt="Namecheap.com"></a>
+    <a href="https:&#x2F;&#x2F;www.namecheap.com&#x2F;?aff=68624" target="_blank"><img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/09/namecheap300x250-2.gif?__hstc=190255348.34838f21d63e8f343cb9eedbc685e4b6.1472762432338.1474734509109.1474736682697.6&__hssc=190255348.10.1474736682697&__hsfp=3125025851" width="250" height="208" border="0" alt="Namecheap.com"></a>
   </article>
 
   <article class="sidebar__content">
-      <a href="http://www.kqzyfj.com/click-8149779-11577048-1474577037000" target="_top">
-      <img src="http://www.tqlkg.com/image-8149779-11577048-1474577037000" width="250" height="208" alt="IPage" border="0"/></a>
+      <a href="http://www.kqzyfj.com/click-8149779-11577048-1474577037000" target="_blank">
+      <img src="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/09/ipage-image-8149779-11577048-1474577037000.gif" width="250" height="208" alt="IPage" border="0"/></a>
   </article>
 
 
