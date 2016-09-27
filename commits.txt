@@ -1,3 +1,9 @@
+commit ac69e2e65bf0407f93000e443db01e05a59b660b
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Tue Sep 27 12:28:57 2016 -0400
+
+    Mejorando prism
+
 commit e4f34843e3bb982cad42cc126a97605f3d382281
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Mon Sep 26 22:24:29 2016 -0400
