@@ -18,6 +18,7 @@ import loadJS from './lib/loadJS'
     retinajs()
     prism()
     doTransparentBar()
+    cookieConsent()
 // Variables Globales
     var btnMenu = document.getElementById('btnMenu')
     var btnButton = document.getElementById('btnButton')
@@ -27,9 +28,6 @@ import loadJS from './lib/loadJS'
 // Menú
     btnMenu.addEventListener('click', showMenu)
     navbarMenu.addEventListener('click', showMenu)
-
-// Cookies
-    cookieConsent()
 
   // Load JS
     var urlJs = [

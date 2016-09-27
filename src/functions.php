@@ -29,9 +29,6 @@ require 'inc/custom-login.php';
 // Custom Email WP
 require 'inc/add-email.php';
 
-// Add nofollow to links
-require 'inc/add-nofollow.php';
-
 // Minify HTML JS CSS
 require 'inc/minifier-script.php';
 

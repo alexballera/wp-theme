@@ -1,3 +1,9 @@
+commit 7d228c3410243e13e5bceb25c52eb9d56f938a02
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Sep 24 16:30:00 2016 -0400
+
+    Agregando funcionalidades
+
 commit 92c4e27d8999468484b95dcae91742db47b49830
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Sat Sep 24 16:03:19 2016 -0400
