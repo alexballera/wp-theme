@@ -1,25 +1,39 @@
-const gulp = require('gulp')
-const browserSync = require('browser-sync')
-const reload = browserSync.reload
-const sass = require('gulp-sass')
-const sassGlob = require('gulp-sass-glob')
-const autoprefixer = require('gulp-autoprefixer')
-const cssnano = require('gulp-cssnano')
-const rename = require('gulp-rename')
-const browserify = require('browserify')
-const source = require('vinyl-source-stream')
-const buffer = require('vinyl-buffer')
-const uglify = require('gulp-uglify')
-const babelify = require('babelify')
-const imagemin = require('gulp-imagemin')
-const pngquant = require('imagemin-pngquant')
-const imageminSvgo = require('imagemin-svgo')
-const imageminOptipng = require('imagemin-optipng')
-const imageminJpegtran = require('imagemin-jpegtran')
-const cache = require('gulp-cache')
-const del = require('del')
+var gulp = require('gulp'),
+browserSync = require('browser-sync'),
+reload = browserSync.reload,
+sass = require('gulp-sass'),
+sassGlob = require('gulp-sass-glob'),
+autoprefixer = require('gulp-autoprefixer'),
+cssnano = require('gulp-cssnano'),
+rename = require('gulp-rename'),
+browserify = require('browserify'),
+source = require('vinyl-source-stream'),
+buffer = require('vinyl-buffer'),
+uglify = require('gulp-uglify'),
+babelify = require('babelify'),
+imagemin = require('gulp-imagemin'),
+pngquant = require('imagemin-pngquant'),
+imageminSvgo = require('imagemin-svgo'),
+imageminOptipng = require('imagemin-optipng'),
+imageminJpegtran = require('imagemin-jpegtran'),
+cache = require('gulp-cache'),
+del = require('del'),
+notify = require('gulp-notify'),
+plumber = require('gulp-plumber');
 // Instalar babel-preset-es2015 & gulp-sass-glob
 // sudo npm install --save-dev babel-preset-es2015 gulp-sass-glob
+
+var onError = function(err) {
+  notify.onError({
+    title:    "Error",
+    message:  "<%= error %>",
+  })(err);
+  this.emit('end');
+};
+
+var plumberOptions = {
+  errorHandler: onError,
+};
 
 // Variables
 const globs = {
@@ -84,20 +98,50 @@ gulp.task('build:php', () => {
 })
 // Styles: Compila SASS ~> CSS
 gulp.task('build:styles', ['loginCSS'], () => {
+  var autoprefixerOptions = {
+    browsers: ['last 2 versions'],
+  };
+
+  var reloadOptions = {
+    stream: true,
+  };
+
+  var sassOptions = {
+    includePaths: [
+    ],
+    outputStyle: 'compressed'
+  };
   return gulp.src(globs.styles.main)
     .pipe(sassGlob())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer('last 2 version'))
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(plumber(plumberOptions))
+    .pipe(autoprefixer(autoprefixerOptions))
     .pipe(cssnano())
     .pipe(gulp.dest(globs.public))
+    .pipe(reload(reloadOptions))
 })
 gulp.task('loginCSS', () => {
+  var autoprefixerOptions = {
+    browsers: ['last 2 versions'],
+  };
+
+  var reloadOptions = {
+    stream: true,
+  };
+
+  var sassOptions = {
+    includePaths: [
+    ],
+    outputStyle: 'compressed'
+  };
   return gulp.src(globs.src + '/login/custom-login.scss')
     .pipe(sassGlob())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer('last 2 version'))
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(plumber(plumberOptions))
+    .pipe(autoprefixer(autoprefixerOptions))
     .pipe(cssnano())
     .pipe(gulp.dest(globs.public + '/login'))
+    .pipe(reload(reloadOptions))
 })
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
