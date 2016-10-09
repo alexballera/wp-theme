@@ -1,3 +1,9 @@
+commit 44f6a3a56abf1bcf8f95827e1106f88b287a4bd2
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Oct 8 21:27:17 2016 -0400
+
+    mejorado estilo de categorias
+
 commit 842a466cc381af8941c8fdff4a53f2cfd1959d43
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Fri Oct 7 10:07:20 2016 -0400
