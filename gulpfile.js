@@ -91,11 +91,13 @@ gulp.task('serve', () => {
     browser: 'google-chrome'
   })
 })
+
 // PHP
 gulp.task('build:php', () => {
   gulp.src(globs.php.watch)
     .pipe(gulp.dest(globs.public))
 })
+
 // Styles: Compila SASS ~> CSS
 gulp.task('build:styles', ['loginCSS'], () => {
   var autoprefixerOptions = {
@@ -146,8 +148,11 @@ gulp.task('loginCSS', () => {
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
 gulp.task('build:scripts', () => {
+  var presets = {
+    presets: 'es2015'
+  }
   return browserify(globs.scripts.main)
-    .transform(babelify, {presets: 'es2015'})
+    .transform(babelify, {presets})
     .bundle()
     .pipe(source('main.js'))
     .pipe(buffer())
