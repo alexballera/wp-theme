@@ -31,6 +31,10 @@
     <!-- Contenido -->
         <section class="content">
             <div class="container">
+              <!-- Ads By CJ -->
+              <!-- <?php get_template_part( 'templates/adscj'); ?> -->
+              <!-- End AdsByCJ -->
+              <?php get_template_part('/templates/adsense', 'webdev'); ?>
             <div class="content__container">
               <div class="content__container--inner">
                 <!-- Servicios, Proyectos & Art&#237;culos -->

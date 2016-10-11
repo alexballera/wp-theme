@@ -2,9 +2,6 @@
 <!-- Inicio de los Art&#237;culos -->
   <?php if ( have_posts() ) : ?>
   <h2 class="content__articles--title title">&#191;Qu&#233; quieres aprender hoy?</h2>
-  <!-- Ads By CJ -->
-  <?php get_template_part( 'templates/adscj'); ?>
-  <!-- End AdsByCJ -->
 <div class="content__articles--container">
   <?php while ( have_posts() ) : the_post(); ?>
   <div id="post-<?php the_ID(); ?>" <?php post_class( 'content__articles--post' ); ?>>
