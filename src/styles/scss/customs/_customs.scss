@@ -37,6 +37,15 @@ h3 {
     }
 }
 
+h4 {
+    font-size: 1.1em;
+    font-style: italic;
+
+    @media screen and (min-width: $screen-md) {
+        font-size: 1.2em;
+    }
+}
+
 noscript iframe.google-tag {
     display: none;
     visibility: hidden;
