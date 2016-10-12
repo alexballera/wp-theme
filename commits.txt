@@ -1,3 +1,9 @@
+commit d761eb0a775b4ca7fb655a5e5777b931150b88dc
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Tue Oct 11 18:54:23 2016 -0400
+
+    Cambiada publicidad en top
+
 commit 539790a62c5e8a669bae42d5a3a9f2ecf0dfba3e
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Sat Oct 8 21:29:53 2016 -0400

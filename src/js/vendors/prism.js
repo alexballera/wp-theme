@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-dark&languages=markup+css+clike+javascript+apacheconf+bash+ruby+css-extras+docker+git+go+http+icon+json+less+markdown+nginx+php+php-extras+powershell+python+jsx+sass+scss+scheme+sql+typescript+vim+wiki */
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+apacheconf+bash+ruby+css-extras+http+json+markdown+nginx+php+php-extras+powershell+python+jsx+sass+scss+scheme+sql+typescript+vim&plugins=line-numbers */
 var _self = (typeof window !== 'undefined')
 	? window   // if in browser
 	: (
@@ -941,94 +941,6 @@ Prism.languages.insertBefore('css', 'function', {
 	'entity': /\\[\da-f]{1,8}/i,
 	'number': /[\d%\.]+/
 });
-Prism.languages.docker = {
-	'keyword': {
-		pattern: /(^\s*)(?:ONBUILD|FROM|MAINTAINER|RUN|EXPOSE|ENV|ADD|COPY|VOLUME|USER|WORKDIR|CMD|LABEL|ENTRYPOINT)(?=\s)/mi,
-		lookbehind: true
-	},
-	'string': /("|')(?:(?!\1)[^\\\r\n]|\\(?:\r\n|[\s\S]))*?\1/,
-	'comment': /#.*/,
-	'punctuation': /---|\.\.\.|[:[\]{}\-,|>?]/
-};
-Prism.languages.git = {
-	/*
-	 * A simple one line comment like in a git status command
-	 * For instance:
-	 * $ git status
-	 * # On branch infinite-scroll
-	 * # Your branch and 'origin/sharedBranches/frontendTeam/infinite-scroll' have diverged,
-	 * # and have 1 and 2 different commits each, respectively.
-	 * nothing to commit (working directory clean)
-	 */
-	'comment': /^#.*/m,
-
-	/*
-	 * Regexp to match the changed lines in a git diff output. Check the example below.
-	 */
-	'deleted': /^[-–].*/m,
-	'inserted': /^\+.*/m,
-
-	/*
-	 * a string (double and simple quote)
-	 */
-	'string': /("|')(\\?.)*?\1/m,
-
-	/*
-	 * a git command. It starts with a random prompt finishing by a $, then "git" then some other parameters
-	 * For instance:
-	 * $ git add file.txt
-	 */
-	'command': {
-		pattern: /^.*\$ git .*$/m,
-		inside: {
-			/*
-			 * A git command can contain a parameter starting by a single or a double dash followed by a string
-			 * For instance:
-			 * $ git diff --cached
-			 * $ git log -p
-			 */
-			'parameter': /\s(--|-)\w+/m
-		}
-	},
-
-	/*
-	 * Coordinates displayed in a git diff command
-	 * For instance:
-	 * $ git diff
-	 * diff --git file.txt file.txt
-	 * index 6214953..1d54a52 100644
-	 * --- file.txt
-	 * +++ file.txt
-	 * @@ -1 +1,2 @@
-	 * -Here's my tetx file
-	 * +Here's my text file
-	 * +And this is the second line
-	 */
-	'coord': /^@@.*@@$/m,
-
-	/*
-	 * Match a "commit [SHA1]" line in a git log output.
-	 * For instance:
-	 * $ git log
-	 * commit a11a14ef7e26f2ca62d4b35eac455ce636d0dc09
-	 * Author: lgiraudel
-	 * Date:   Mon Feb 17 11:18:34 2014 +0100
-	 *
-	 *     Add of a new line
-	 */
-	'commit_sha1': /^commit \w{40}$/m
-};
-
-Prism.languages.go = Prism.languages.extend('clike', {
-	'keyword': /\b(break|case|chan|const|continue|default|defer|else|fallthrough|for|func|go(to)?|if|import|interface|map|package|range|return|select|struct|switch|type|var)\b/,
-	'builtin': /\b(bool|byte|complex(64|128)|error|float(32|64)|rune|string|u?int(8|16|32|64|)|uintptr|append|cap|close|complex|copy|delete|imag|len|make|new|panic|print(ln)?|real|recover)\b/,
-	'boolean': /\b(_|iota|nil|true|false)\b/,
-	'operator': /[*\/%^!=]=?|\+[=+]?|-[=-]?|\|[=|]?|&(?:=|&|\^=?)?|>(?:>=?|=)?|<(?:<=?|=|-)?|:=|\.\.\./,
-	'number': /\b(-?(0x[a-f\d]+|(\d+\.?\d*|\.\d+)(e[-+]?\d+)?)i?)\b/i,
-	'string': /("|'|`)(\\?.|\r|\n)*?\1/
-});
-delete Prism.languages.go['class-name'];
-
 Prism.languages.http = {
 	'request-line': {
 		pattern: /^(POST|GET|PUT|DELETE|OPTIONS|PATCH|TRACE|CONNECT)\b\shttps?:\/\/\S+\sHTTP\/[0-9.]+/m,
@@ -1080,95 +992,17 @@ for (var contentType in httpLanguages) {
 	}
 }
 ;
-Prism.languages.icon = {
-	'comment': /#.*/,
-	'string': /(["'])(?:(?!\1)[^\\\r\n]|\\.|_(?:\r?\n|\r))*\1/,
-	'number': /\b(?:\d+r[a-z\d]+|\d+(?:\.\d+)?(?:e[+-]?\d+)?)\b|\.\d+\b/i,
-	'builtin-keyword': {
-		pattern: /&(?:allocated|ascii|clock|collections|cset|current|date|dateline|digits|dump|e|error(?:number|text|value)?|errout|fail|features|file|host|input|lcase|letters|level|line|main|null|output|phi|pi|pos|progname|random|regions|source|storage|subject|time|trace|ucase|version)\b/,
-		alias: 'variable'
-	},
-	'directive': {
-		pattern: /\$\w+/,
-		alias: 'builtin'
-	},
-	'keyword': /\b(?:break|by|case|create|default|do|else|end|every|fail|global|if|initial|invocable|link|local|next|not|of|procedure|record|repeat|return|static|suspend|then|to|until|while)\b/,
-	'function': /(?!\d)\w+(?=\s*[({]|\s*!\s*\[)/,
-	'operator': /[+-]:(?!=)|(?:[\/?@^%&]|\+\+?|--?|==?=?|~==?=?|\*\*?|\|\|\|?|<(?:->?|<?=?)|>>?=?)(?::=)?|:(?:=:?)?|[!.\\|~]/,
-	'punctuation': /[\[\](){},;]/
-};
 Prism.languages.json = {
-    'property': /".*?"(?=\s*:)/ig,
-    'string': /"(?!:)(\\?[^"])*?"(?!:)/g,
-    'number': /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?)\b/g,
+    'property': /"(?:\\.|[^|"])*"(?=\s*:)/ig,
+    'string': /"(?!:)(?:\\.|[^|"])*"(?!:)/g,
+    'number': /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee][+-]?\d+)?)\b/g,
     'punctuation': /[{}[\]);,]/g,
     'operator': /:/g,
     'boolean': /\b(true|false)\b/gi,
-    'null': /\bnull\b/gi,
+    'null': /\bnull\b/gi
 };
 
 Prism.languages.jsonp = Prism.languages.json;
-
-/* FIXME :
- :extend() is not handled specifically : its highlighting is buggy.
- Mixin usage must be inside a ruleset to be highlighted.
- At-rules (e.g. import) containing interpolations are buggy.
- Detached rulesets are highlighted as at-rules.
- A comment before a mixin usage prevents the latter to be properly highlighted.
- */
-
-Prism.languages.less = Prism.languages.extend('css', {
-	'comment': [
-		/\/\*[\w\W]*?\*\//,
-		{
-			pattern: /(^|[^\\])\/\/.*/,
-			lookbehind: true
-		}
-	],
-	'atrule': {
-		pattern: /@[\w-]+?(?:\([^{}]+\)|[^(){};])*?(?=\s*\{)/i,
-		inside: {
-			'punctuation': /[:()]/
-		}
-	},
-	// selectors and mixins are considered the same
-	'selector': {
-		pattern: /(?:@\{[\w-]+\}|[^{};\s@])(?:@\{[\w-]+\}|\([^{}]*\)|[^{};@])*?(?=\s*\{)/,
-		inside: {
-			// mixin parameters
-			'variable': /@+[\w-]+/
-		}
-	},
-
-	'property': /(?:@\{[\w-]+\}|[\w-])+(?:\+_?)?(?=\s*:)/i,
-	'punctuation': /[{}();:,]/,
-	'operator': /[+\-*\/]/
-});
-
-// Invert function and punctuation positions
-Prism.languages.insertBefore('less', 'punctuation', {
-	'function': Prism.languages.less.function
-});
-
-Prism.languages.insertBefore('less', 'property', {
-	'variable': [
-		// Variable declaration (the colon must be consumed!)
-		{
-			pattern: /@[\w-]+\s*:/,
-			inside: {
-				"punctuation": /:/
-			}
-		},
-
-		// Variable usage
-		/@@?[\w-]+/
-	],
-	'mixin-usage': {
-		pattern: /([{;]\s*)[.#](?!\d)[\w-]+.*?(?=[(;])/,
-		lookbehind: true,
-		alias: 'function'
-	}
-});
 
 Prism.languages.markdown = Prism.languages.extend('markup', {});
 Prism.languages.insertBefore('markdown', 'prolog', {
@@ -1738,85 +1572,3 @@ Prism.languages.vim = {
 	'operator': /\|\||&&|[-+.]=?|[=!](?:[=~][#?]?)?|[<>]=?[#?]?|[*\/%?]|\b(?:is(?:not)?)\b/,
 	'punctuation': /[{}[\](),;:]/
 };
-Prism.languages.wiki = Prism.languages.extend('markup', {
-	'block-comment': {
-		pattern: /(^|[^\\])\/\*[\w\W]*?\*\//,
-		lookbehind: true,
-		alias: 'comment'
-	},
-	'heading': {
-		pattern: /^(=+).+?\1/m,
-		inside: {
-			'punctuation': /^=+|=+$/,
-			'important': /.+/
-		}
-	},
-	'emphasis': {
-		// TODO Multi-line
-		pattern: /('{2,5}).+?\1/,
-		inside: {
-			'bold italic': {
-				pattern: /(''''').+?(?=\1)/,
-				lookbehind: true
-			},
-			'bold': {
-				pattern: /(''')[^'](?:.*?[^'])?(?=\1)/,
-				lookbehind: true
-			},
-			'italic': {
-				pattern: /('')[^'](?:.*?[^'])?(?=\1)/,
-				lookbehind: true
-			},
-			'punctuation': /^''+|''+$/
-		}
-	},
-	'hr': {
-		pattern: /^-{4,}/m,
-		alias: 'punctuation'
-	},
-	'url': [
-		/ISBN +(?:97[89][ -]?)?(?:\d[ -]?){9}[\dx]\b|(?:RFC|PMID) +\d+/i,
-		/\[\[.+?\]\]|\[.+?\]/
-	],
-	'variable': [
-		/__[A-Z]+__/,
-		// FIXME Nested structures should be handled
-		// {{formatnum:{{#expr:{{{3}}}}}}}
-		/\{{3}.+?\}{3}/,
-		/\{\{.+?}}/
-	],
-	'symbol': [
-		/^#redirect/im,
-		/~{3,5}/
-	],
-	// Handle table attrs:
-	// {|
-	// ! style="text-align:left;"| Item
-	// |}
-	'table-tag': {
-		pattern: /((?:^|[|!])[|!])[^|\r\n]+\|(?!\|)/m,
-		lookbehind: true,
-		inside: {
-			'table-bar': {
-				pattern: /\|$/,
-				alias: 'punctuation'
-			},
-			rest: Prism.languages.markup['tag'].inside
-		}
-	},
-	'punctuation': /^(?:\{\||\|\}|\|-|[*#:;!|])|\|\||!!/m
-});
-
-Prism.languages.insertBefore('wiki', 'tag', {
-	// Prevent highlighting inside <nowiki>, <source> and <pre> tags
-	'nowiki': {
-		pattern: /<(nowiki|pre|source)\b[\w\W]*?>[\w\W]*?<\/\1>/i,
-		inside: {
-			'tag': {
-				pattern: /<(?:nowiki|pre|source)\b[\w\W]*?>|<\/(?:nowiki|pre|source)>/i,
-				inside: Prism.languages.markup['tag'].inside
-			}
-		}
-	}
-});
-
