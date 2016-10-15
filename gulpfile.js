@@ -20,8 +20,8 @@ cache = require('gulp-cache'),
 del = require('del'),
 notify = require('gulp-notify'),
 plumber = require('gulp-plumber');
-// Instalar babel-preset-es2015 & gulp-sass-glob
-// sudo npm install --save-dev babel-preset-es2015 gulp-sass-glob
+// Instalar babel-preset-latest & gulp-sass-glob
+// sudo npm install i -D babel-preset-latest babel-cli gulp-sass-glob
 
 var onError = function(err) {
   notify.onError({
@@ -149,7 +149,7 @@ gulp.task('loginCSS', () => {
 // Scripts: todos los archivos JS concatenados en uno solo minificado
 gulp.task('build:scripts', () => {
   var presets = {
-    presets: 'es2015'
+    presets: 'latest'
   }
   return browserify(globs.scripts.main)
     .transform(babelify, {presets})
@@ -268,4 +268,3 @@ gulp.task('build', ['clean'], () => {
 gulp.task('default', ['build'], () => {
   gulp.start('copy', 'watch')
 })
-
