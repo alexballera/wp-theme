@@ -1,3 +1,9 @@
+commit 71bbdbfadaa25186ed59322ba58264cd3f105186
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Oct 15 16:08:28 2016 -0400
+
+    Actualizado babel
+
 commit 7b2793c1ec7353049ff2976683a7d4ad24b34dc8
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Sat Oct 15 15:54:11 2016 -0400
