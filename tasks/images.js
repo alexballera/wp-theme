@@ -6,7 +6,6 @@ imageminOptipng = require('imagemin-optipng'),
 imageminJpegtran = require('imagemin-jpegtran'),
 cache = require('gulp-cache');
 
-// Images
 gulp.task('build:images', ['screenshot', 'login'], () => {
   gulp.src('./src/images/**')
     .pipe(cache(imagemin({
