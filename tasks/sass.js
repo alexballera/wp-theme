@@ -1,9 +1,9 @@
-var gulp = require('gulp'),
-sass = require('gulp-sass'),
-sassGlob = require('gulp-sass-glob'),
-autoprefixer = require('gulp-autoprefixer'),
-cssnano = require('gulp-cssnano'),
-plumber = require('gulp-plumber');
+var gulp = require('gulp')
+var sass = require('gulp-sass')
+var sassGlob = require('gulp-sass-glob')
+var autoprefixer = require('gulp-autoprefixer')
+var cssnano = require('gulp-cssnano')
+var plumber = require('gulp-plumber')
 
 var onError = function(err) {
   notify.onError({

@@ -1,3 +1,9 @@
+commit d42add87a3e7912bd415531376513a765333e647
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Oct 15 18:03:10 2016 -0400
+
+    optimizando tasks
+
 commit 99e60770d91b0be245a572620d9d26d189f66c75
 Author: Alex Ballera <alexballera@gmail.com>
 Date:   Sat Oct 15 18:01:27 2016 -0400
