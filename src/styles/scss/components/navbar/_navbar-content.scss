@@ -1,0 +1,11 @@
+.nav__menu--list.nav__menu-content-list{
+  width: 100%;
+  margin-bottom: 1rem;
+  >li{
+    width: 10%;
+    >a{
+      background-color: $black;
+      font-size: 90%;
+    }
+  }
+}

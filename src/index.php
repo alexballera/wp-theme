@@ -35,23 +35,23 @@
               <!-- <?php get_template_part( 'templates/adscj'); ?> -->
               <!-- End AdsByCJ -->
               <?php get_template_part('/templates/adsense', 'webdev'); ?>
-            <div class="content__container">
-              <div class="content__container--inner">
-                <!-- Servicios, Proyectos & Art&#237;culos -->
-                      <!-- Art&#237;culos -->
-                            <article id="content_articles" class="content__articles">
-                                <?php get_template_part('/templates/content'); ?>
-                            </article>
-                      <!-- Fin de Art&#237;culos -->
-                      <!-- Proyectos -->
-                            <article id="content_articles" class="content__articles">
-                                        <?php get_template_part('/templates/content-portfolio'); ?>
-                            </article>
-                      <!-- Fin de Proyectos -->
-                <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
+              <div class="content__container">
+                <div class="content__container--inner">
+                  <!-- Servicios, Proyectos & Art&#237;culos -->
+                        <!-- Art&#237;culos -->
+                              <article id="content_articles" class="content__articles">
+                                  <?php get_template_part('/templates/content'); ?>
+                              </article>
+                        <!-- Fin de Art&#237;culos -->
+                        <!-- Proyectos -->
+                              <article id="content_articles" class="content__articles">
+                                          <?php get_template_part('/templates/content-portfolio'); ?>
+                              </article>
+                        <!-- Fin de Proyectos -->
+                  <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
+                </div>
+                 <?php get_sidebar(); ?>
               </div>
-               <?php get_sidebar(); ?>
-               </div>
             </div>
         </section>
     <!-- Fin del Contenido -->

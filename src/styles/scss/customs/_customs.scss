@@ -58,9 +58,9 @@ noscript iframe.google-tag {
     color: grey;
     padding: 2rem 0;
 
-    @include respond-to(sm) {
-        padding-top: 1rem;
-    }
+    // @include respond-to(sm) {
+    //     padding-top: 1rem;
+    // }
 }
 
 .hide {
