@@ -21,7 +21,6 @@
                                         <?php get_template_part('/templates/content', 'taxonomies'); ?>
                                   </div>
                             </article>
-                            <!-- <?php get_sidebar(); ?> -->
                       <!-- Fin de Art&#237;culos -->
                 <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
                 </div>

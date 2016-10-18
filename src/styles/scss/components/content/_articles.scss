@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: $background;
     padding-bottom: 1rem;
+    width: 100%;
 
     @include respond-to(lg) {
         box-sizing: border-box;
