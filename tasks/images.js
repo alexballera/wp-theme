@@ -1,10 +1,10 @@
-var gulp = require('gulp')
-var imagemin = require('gulp-imagemin')
-var pngquant = require('imagemin-pngquant')
-var imageminSvgo = require('imagemin-svgo')
-var imageminOptipng = require('imagemin-optipng')
-var imageminJpegtran = require('imagemin-jpegtran')
-var cache = require('gulp-cache')
+import gulp from 'gulp'
+import imagemin from 'gulp-imagemin'
+import pngquant from 'imagemin-pngquant'
+import imageminSvgo from 'imagemin-svgo'
+import imageminOptipng from 'imagemin-optipng'
+import imageminJpegtran from 'imagemin-jpegtran'
+import cache from 'gulp-cache'
 
 gulp.task('build:images', ['screenshot', 'login'], () => {
   gulp.src('./src/images/**')

@@ -1,4 +1,4 @@
-var gulp = require('gulp')
+import gulp from 'gulp'
 require('require-dir')('./tasks')
 
 // Instalar babel-preset-latest & gulp-sass-glob

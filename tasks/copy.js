@@ -1,4 +1,4 @@
-var gulp = require('gulp')
+import gulp from 'gulp'
 
 gulp.task('copy', () => {
   gulp.src('./src/styles/fonts/fonts-mfizz/**/*.*')

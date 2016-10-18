@@ -1,10 +1,10 @@
-var gulp = require('gulp')
-var rename = require('gulp-rename')
-var browserify = require('browserify')
-var source = require('vinyl-source-stream')
-var buffer = require('vinyl-buffer')
-var uglify = require('gulp-uglify')
-var babelify = require('babelify')
+import gulp from 'gulp'
+import rename from 'gulp-rename'
+import browserify from 'browserify'
+import source from 'vinyl-source-stream'
+import buffer from 'vinyl-buffer'
+import uglify from 'gulp-uglify'
+import babelify from 'babelify'
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
 gulp.task('build:scripts', () => {

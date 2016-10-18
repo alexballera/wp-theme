@@ -1,5 +1,5 @@
-var gulp = require('gulp')
-var del = require('del')
+import gulp from 'gulp'
+import del from 'del'
 
 gulp.task('clean', (cb) => {
   return del('./public', cb)
