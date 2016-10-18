@@ -21,7 +21,7 @@
                                         <?php get_template_part('/templates/content'); ?>
                                   </div>
                             </article>
-                            <?php get_sidebar(); ?>
+                            <!-- <?php get_sidebar(); ?> -->
                       <!-- Fin de Art&#237;culos -->
                 <!-- Fin de Servicios, Proyectos & Art&#237;culos -->
                 </div>
