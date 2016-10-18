@@ -18,7 +18,7 @@
                                   <div class="container">
                                         <div id="articles"></div>
                                         <h2 class="content__articles--title title">Disfruta de los art&#237;culos de <?php the_archive_title(); ?></h2>
-                                        <?php get_template_part('/templates/content'); ?>
+                                        <?php get_template_part('/templates/content', 'taxonomies'); ?>
                                   </div>
                             </article>
                             <!-- <?php get_sidebar(); ?> -->
